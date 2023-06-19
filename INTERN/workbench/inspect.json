@@ -1,0 +1,506 @@
+{
+    "links": {
+        "self": "https://asap-cms.bua-dns.de/json/rooms"
+    },
+    "meta": {
+        "count": 7,
+        "total": 7
+    },
+    "data": [
+        {
+            "id": "2",
+            "type": "rooms",
+            "attributes": {
+                "slug": "etappe-1",
+                "datecreated": "2021-10-11T19:52:54+02:00",
+                "datechanged": "2022-08-30T11:52:29+02:00",
+                "datepublish": "2021-10-11T19:52:32+02:00",
+                "datedepublish": "",
+                "ownerid": "2",
+                "status": "published",
+                "templatefields": [],
+                "title": "Der Mythos",
+                "position": "1",
+                "claim": "<p>Wer ist die Schlafende Frau?</p>\r\n",
+                "intro": "",
+                "representation": "",
+                "incomingrelation": "",
+                "exhibits": [
+                    {
+                        "object": "37",
+                        "position": "1",
+                        "short_text": "",
+                        "text": "<p>Lange sah man in der Schlafenden die ägyptische Königin Kleopatra. Der Armreif an ihrem Oberarm hat die Form einer Schlange. Ist das die Schlange, mit der sich Kleopatra das Leben nahm? Antike Quellen berichten von diesem Selbstmord. Kleopatra hatte den Krieg gegen den späteren römischen Kaiser Augustus verloren. Ihr blieb nur der heroische Tod. In der europäischen Renaissance (besonders im 16. Jahrhundert) liebte man diese Geschichte und wollte in der Statue Kleopatra erkennen.</p>\r\n\r\n<p>Doch diese Deutung ist falsch. Die Statue aus der Antike stellte die griechische Heldin Ariadne dar. Sie erkennen dies auch an den folgenden Bildern in der Ausstellung.</p>\r\n",
+                        "slider": "",
+                        "title": "Wer ist die schlafende Frau?"
+                    },
+                    {
+                        "object": "22",
+                        "position": "1",
+                        "short_text": "",
+                        "text": "<p>Wir wollen Ihnen den Mythos um Ariadne erzählen, bevor wir uns die Statue selber anschauen. Dazu haben Sie im Folgenden zwei Möglichkeiten:</p>\r\n\r\n<p>Klicken Sie auf das Video und sehen und hören Sie die Geschichte der griechischen Heldin und Göttin.</p>\r\n",
+                        "slider": "",
+                        "title": "Der Film"
+                    },
+                    {
+                        "object": "",
+                        "slider": "1",
+                        "position": "2",
+                        "short_text": "",
+                        "text": "<p>Klicken Sie auf den Bilderstapel. Hier finden Sie Darstellungen des Mythos aus der Antike und können parallel dazu mehr über Ariadne lesen.</p>\r\n",
+                        "title": ""
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://asap-cms.bua-dns.de/json/rooms/2"
+            }
+        },
+        {
+            "id": "3",
+            "type": "rooms",
+            "attributes": {
+                "slug": "etappe-2",
+                "datecreated": "2021-10-11T19:56:10+02:00",
+                "datechanged": "2022-08-30T12:56:14+02:00",
+                "datepublish": "2021-10-11T19:55:53+02:00",
+                "datedepublish": "",
+                "ownerid": "2",
+                "status": "published",
+                "templatefields": [],
+                "title": "Der Schlaf",
+                "position": "2",
+                "claim": "<p>Was bedeutet der Schlaf?</p>\r\n",
+                "intro": "",
+                "representation": "",
+                "incomingrelation": "",
+                "exhibits": [
+                    {
+                        "object": "29",
+                        "position": "2",
+                        "short_text": "",
+                        "text": "<p>Die schlafenden Ariadne zeigt die zentrale Szene des Mythos: Von Theseus verlassen wird sie im Schlaf von Dionysos aufgefunden. Es ist der Übergang in der Geschichte von der Gefährtin des Helden zur Frau des Gottes und damit zugleich der Übergang von einer sterblichen in eine göttliche Welt. Auch in anderen Mythen nehmen sterbliche Menschen an der göttlichen Unsterblichkeit nach oder durch den Schlaf Teil (Endymion, Psyche).</p>\r\n\r\n<p>Das Wandgemälde zeigt Dionysos vor Ariadne. Ein Eros führt den Gott zu der Geliebten, ein Faun entblößt die Schlafende. Der Schlaf selbst sowie die sinnlich erotische Präsentation des Körpers sind eng mit Dionysos verbunden. Sie visualisieren auch spezifisch das Eintreten der Ariadne in die dionysische Welt.</p>\r\n",
+                        "slider": "",
+                        "title": "Was bedeutet der Schlaf?"
+                    },
+                    {
+                        "object": "",
+                        "position": "0",
+                        "short_text": "<p>Bitte hier sliden</p>\r\n",
+                        "text": "",
+                        "slider": "3",
+                        "title": ""
+                    },
+                    {
+                        "object": "51",
+                        "slider": "",
+                        "position": "0",
+                        "short_text": "",
+                        "text": "<p>Als Bruder des Todes führt der Schlaf zur Wiedergeburt der Ariadne als Göttin oder Gefährtin der des Gottes. Im Bild der schlafenden Ariadne verdichtet sich die ganze Geschichte. Dies gilt auch für das Einzelbild der Statue. Die Entblößung im Schlaf birgt zudem eine starke erotische Komponente. Der Betrachtende wird zum Voyeur, ohne dass es die Schlafende merkt.</p>\r\n\r\n<p>In antiken Bildern liegen schlafende Gestalten oft in der Natur. Die Natur der Raum des ekstatischen Feierns und der Erholung gehören zur Sphäre des Gottes Dionysos. Daher sind die Schlafenden auf den Bildern oft Gestalten aus dem Umkreis des Gottes (Nymphen, Mänaden, Faun). Ariadne wird durch den Schlaf somit auch konkret in den Bereich Dionysos überführt. Sie wird zu seiner Gattin.</p>\r\n\r\n<p>Das Bild der schlafenden Ariadne erfreute sich besonders in römischer Zeit großer Beliebtheit. Manche Forschende sehen darin auch ein Interesse der römischen Elite an den dionysischen Mysterien. Während der Feierlichkeiten zu Ehren des Dionysos wurde man in geheime Ritualen eingeweiht. Und so, wie Ariadne vom Menschen zur Gottheit wurde, so änderte sich für die Eingeweihten ihr geistiger Status.</p>\r\n",
+                        "title": "Der Schlaf der Ariadne"
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://asap-cms.bua-dns.de/json/rooms/3"
+            }
+        },
+        {
+            "id": "4",
+            "type": "rooms",
+            "attributes": {
+                "slug": "etappe-3",
+                "datecreated": "2021-10-11T19:57:27+02:00",
+                "datechanged": "2022-08-30T15:24:53+02:00",
+                "datepublish": "2021-10-11T19:56:51+02:00",
+                "datedepublish": "",
+                "ownerid": "2",
+                "status": "published",
+                "templatefields": [],
+                "title": "Das Vorbild",
+                "position": "3",
+                "claim": "<p>Was ist das Vorbild der Statue?</p>\r\n",
+                "intro": "",
+                "representation": "",
+                "incomingrelation": "",
+                "exhibits": [
+                    {
+                        "object": "44",
+                        "position": "1",
+                        "short_text": "",
+                        "text": "<p>Die auf einem Felsen liegende Schlafende Ariadne wurde im Griechenland des 2. Jahrhunderts v. Chr. geschaffen, in der Epoche des Hellenismus (ca. 330–30 v. Chr.). Figuren in Naturlandschaften gehörten damals zu den beliebten Themen der Zeit. Großes Interesse galt zudem den menschlichen Emotionen (Leid, Freude, Schmerz) ebenso wie situativen Momenten: Dazu zählten auch der Schlaf oder die eher zufälligen Bewegungen. Vieles davon kam in der griechischen Statue der Ariadne zusammen. Sie war möglicherweise in einem Heiligtum des Dionysos aufgestellt. Doch diese Statue hat sich nicht erhalten. Sie ist heute verschollen.</p>\r\n",
+                        "slider": "",
+                        "title": "Was ist das Vorbild der Statue?"
+                    },
+                    {
+                        "object": "6",
+                        "position": "1",
+                        "short_text": "",
+                        "text": "<p>Die Römer waren begeistert von der griechischen Kunst und fertigten Kopien der Skulpturen an, um sie in ihren Gärten und Villen aufzustellen. Besonders mythologische Figuren aus dem Umkreis des Gottes Dionysos wurden gerne als Gartenskulpturen verwendet. Dies war mit den Vorstellungen eines sorgenfreien und genussreichen Lebens in der freien Natur verbunden. Die Schlafende Ariadne auf ihrem Felsenbett eignete sich gut für solche römischen Gartenanlagen.</p>\r\n\r\n<p>Drei der berühmtesten römischen Kopien der Schlafenden Ariadne befinden sich heute in Rom (Vatikan), in Florenz und in Madrid. Trotz ihres gemeinsamen griechischen Vorbildes weisen die Kopien aber Unterschiede auf. Einige davon lassen sich auf den ersten Blick erkennen, manche sind schwerer zu sehen. Die römischen Kopisten arbeiteten demnach durchaus individuell. Und so wurden auch diese Kopien zu Vorbildern wiederum anderer Statuen. Besonders die römische Kopie im Vatikan kopierte man in der Neuzeit als antikes ‚Original‘.</p>\r\n",
+                        "slider": "",
+                        "title": "Die Eine und die Vielen"
+                    },
+                    {
+                        "object": "46",
+                        "position": "0",
+                        "short_text": "",
+                        "text": "<p>Der Blick auf die folgenden Statuen zeigt die Gemeinsamkeiten und Unterschiede römischer Kopien nach demselben Original auf: Alle drei lagern in ähnlicher Haltung auf einem Felsen. Der rechte Arm ist jeweils angewinkelt über den Kopf gelegt, der linke stützt das leicht zur Seite geneigte Gesicht. Die Beine sind überkreuzt ausgestreckt, das schwere Gewand ist verrutscht und entblößt Teile des Oberkörpers.</p>\r\n\r\n<p>Doch es gibt Unterschiede: Sie werden unter anderem durch die hier dargestellten Silhouetten deutlich: Bei gleicher Haltung ist die vatikanische Ariadne sehr viel höher gelagert als die beiden anderen Statuen. Sie überragt diese dadurch deutlich und wirkt größer. Die Statue in Madrid hingegen liegt am flachsten, die Statue in Florenz bildet eine Mittelposition. Auf weitere Unterschiede wird im Folgenden hingewiesen.</p>\r\n",
+                        "slider": "",
+                        "title": "Drei römische Statuen der Ariadne nach einem griechischen Vorbild"
+                    },
+                    {
+                        "object": "45",
+                        "position": "0",
+                        "short_text": "",
+                        "text": "<p>… dreht sich dem Betrachtenden stärker entgegen, als ihre beiden flacher gelagerten ‚Schwestern‘. Ihr Körper ist im Gegensatz zu den beiden anderen römischen Kopien aufrechter. Dadurch wirkt Ariadne in dieser Statue präsenter und trotz des Schlafes aktiver. Sie scheint nur kurz eingenickt zu sein.</p>\r\n\r\n<p>Alle drei Statuen der Ariadne stammen aus dem 2. Jahrhundert n. Chr. In dieser Phase der römischen Kaiserzeit war das Thema besonders beliebt. Möglicherweise stand die vatikanische Statue ursprünglich in den Thermen des Agrippa in Rom. Diese Thermen wurden unter Kaiser Hadrian in den Jahren 118 bis 125 n. Chr. restauriert und mit Statuen ausgestattet. In der Renaissance ist die Skulptur erstmals aus dem Palazzo Maffei bekannt. Dieser Palast war auf den Ruinen der Agrippa-Thermen erbaut worden. Die Skulptur ging im frühen 16. Jahrhundert in den Besitz des Papstes über.</p>\r\n",
+                        "slider": "",
+                        "title": "Die Ariadne im Vatikan …"
+                    },
+                    {
+                        "object": "3",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Die Ariadne in Florenz …",
+                        "short_text": "",
+                        "text": "<p>… lässt ihren Kopf in den Nacken fallen, sodass der Blick nach oben gerichtet ist. Ihre linke Hand liegt locker neben dem Kopf und dient nicht als Stütze. Der Kopf der vatikanischen Ariadne neigt sich dagegen in Richtung der Betrachtenden und ruht auf dem linken Handrücken. Eine Mittelposition zwischen beiden Statuen nimmt die Ariadne in Madrid ein.</p>\r\n\r\n<p>Erwähnt wird die florentiner Statue erstmals in einem Inventar der Villa Medici in Rom im Jahr 1598. Möglicherweise wurde sie auf dem Gebiet dieser Villa ausgegraben. In der Antike befanden sich hier ausgedehnte Gärten und Wasseranlagen (Nymphäen). In einem solchen Kontext kann man sich die Schlafende Ariadne in römischer Zeit gut vorstellen.</p>\r\n\r\n<p>Im Jahr 1787 brachte man die Statue nach Florenz. Seit 1883 steht sie dort im Archäologischen Museum.</p>\r\n"
+                    },
+                    {
+                        "object": "4",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Die Ariadne in Madrid …",
+                        "short_text": "",
+                        "text": "<p>… liegt in einer ähnlich flachen Haltung wie die Statue in Florenz.</p>\r\n\r\n<p>Alle drei Kopien tragen ein ähnlich drapiertes Gewand. Während die Ariadne im Vatikan und die in Florenz besonders um die Hüfte herum fast die gleichen Stoffbahnen aufweisen – achten Sie auf die quer über den Körper verlaufenden Faltenwulste – weicht das Gewand der Ariadne in Madrid davon deutlich ab. Es ist gleichförmiger und weniger stark von Kontrasten geprägt. Der Kopf wiederum stützt sich auf die linke Hand auf, ganz wie in der vatikanischen Fassung.</p>\r\n\r\n<p>Diese Statue ist die jüngste der dreien. Über ihren Fundort ist nichts bekannt. Sie stammt aber auch aus Rom und gehörte im 17. Jahrhundert zur Sammlung der Königin Christina von Schweden. Seit 1689 war sie im Palazzo Odescalchi in Rom zu sehen. Philipp V. von Spanien erwarb sie 1724 und seit 1828 ist sie im Prado-Museum ausgestellt.</p>\r\n"
+                    },
+                    {
+                        "object": "44",
+                        "slider": "",
+                        "position": "0",
+                        "title": "",
+                        "short_text": "",
+                        "text": "<p>Die Skulptur der Schlafenden Ariadne war nie als Teil einer Statuengruppe konzipiert, sondern als Einzelfigur. Die Betrachtenden mussten sich den herantretenden Dionysos bildlich vorstellen. Oder aber sie schlüpften selbst in die Rolle des Gottes: Wie der Gott durften sie nun Ariadne im Schlafe bewundern.</p>\r\n\r\n<p>Auf welche der drei Statuen lässt sich die Ariadne in Berlin zurückführen?</p>\r\n"
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://asap-cms.bua-dns.de/json/rooms/4"
+            }
+        },
+        {
+            "id": "5",
+            "type": "rooms",
+            "attributes": {
+                "slug": "etappe-4",
+                "datecreated": "2021-10-11T19:59:14+02:00",
+                "datechanged": "2022-08-30T15:25:13+02:00",
+                "datepublish": "2021-10-11T19:58:35+02:00",
+                "datedepublish": "",
+                "ownerid": "2",
+                "status": "published",
+                "templatefields": [],
+                "title": "Raum 4",
+                "position": "4",
+                "claim": "<p>Wie wurde die Statue der Schlafenden Ariadne in der Neuzeit berühmt?</p>\r\n",
+                "intro": "",
+                "representation": "",
+                "incomingrelation": "",
+                "exhibits": [
+                    {
+                        "object": "48",
+                        "position": "0",
+                        "short_text": "",
+                        "text": "<p>Am Beginn stand eine Verwechslung: Der Armreif am Oberarm der Statue hat die Form einer Schlange. Seit dem 15. Jahrhundert sah man daher in den antiken Statuen der Schlafenden nicht Ariadne, sondern die letzte ägyptische Königin Kleopatra. Ist das die Schlange, mit deren Gift sich Kleopatra das Leben nahm? Antike Quellen berichten von diesem Selbstmord. Kleopatra hatte zusammen mit dem römischen Feldherrn Marc Anton den Krieg gegen den späteren römischen Kaiser Augustus verloren. Ihr blieb nur der heroische Tod durch einen Schlangenbiss.</p>\r\n\r\n<p>In der europäischen Renaissance war dieses Thema besonders beliebt. Die Statue der Schlafenden im Vatikan stand unter Papst Julius II. (1503–1513) an einem Brunnen. In einem Gedicht dieser Zeit spricht Kleopatra selbst aus der Statue heraus: „Durch den Tod entzog ich mich dem Triumphzug des Augustus. Als Statue diene ich Deinem Wasser, o Julius.“</p>\r\n",
+                        "slider": "",
+                        "title": "Wie wurde die Statue der Schlafenden Ariadne in der Neuzeit berühmt?"
+                    },
+                    {
+                        "object": "6",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Die Bedeutung der ‚Kleopatra‘ für den römischen Papst",
+                        "short_text": "",
+                        "text": "<p>1512 ließ Papst Julius II. die Statue der Schlafenden über einem antiken Sarkophag als Brunnenfigur im Belvedere des Vatikan aufstellen. Für ihn war ‚Kleopatra‘ Teil eines politischen Programms: Er sah sich selbst in der Tradition römischer Feldherren und Kaiser – insbesondere in der des Caius Julius Caesar – und war politisch und militärisch in Italien aktiv. Kleopatra war auch die Geliebte Caesars gewesen. Durch die Aufstellung antiker Statuen inszenierte Julius sich als Nachfolger berühmter Römer der Antike und als Wiederbegründer der Größe Roms.</p>\r\n\r\n<p>Gedichte des 16. Jahrhunderts preisen die Statue der Kleopatra: Der anfängliche Hass, der sie in den Selbstmord trieb, ist überwunden. Nun ruht sie in der ewigen Stadt, deren Freundin sie ist. Sie ordnet sich dem neuen Herrscher Julius unter und symbolisiert dessen Macht.</p>\r\n"
+                    },
+                    {
+                        "object": "47",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Die Statuen des Belvedere: Entstehung eines Kanons",
+                        "short_text": "",
+                        "text": "<p>1503 beauftragte Papst Julius II. den Architekten Donato Bramante damit, Erweiterungen an der <i>Villa del Belvedere</i> des Vatikan durchzuführen. Es entstanden große Höfe und Gartenanlagen, darunter auch der kleinere <i>Cortile delle Statue</i>. Hier ließ Julius antike Statuen aufstellen, die schnell zu den berühmtesten in Europa gehören sollten. Unter ihnen befanden sich die neu gefundene Laokoon-Gruppe und der sog. Apoll vom Belvedere. Gerade der Fund der Laokoon-Gruppe erregte großes Aufsehen, handelt es sich doch um eine bereits in den antiken Schriften gerühmte Skulptur.</p>\r\n\r\n<p>Zu den im <i>Cortile delle Statue</i> gezeigten Statuen zählte auch die sog. Kleopatra. Sie profitierte von der Berühmtheit des Laokoon, denn durch ihn wurde das ganze Ensemble bekannt und rezipiert. Die Skulpturen vom Belvedere entwickelten sich zu kanonischen Vorbildern für zeitgenössische Künstler.</p>\r\n"
+                    },
+                    {
+                        "object": "19",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Laokoon",
+                        "short_text": "",
+                        "text": "<p>Die Statue des Laokoon wurde am 14. Januar 1506 in einem Weinberg in Rom unweit des Kolosseums gefunden. Man erkannte in ihr sofort die aus den Schriften Plinius des Älteren bekannte Skulptur und sie erlangte sehr schnell größte Berühmtheit. Papst Julius II. machte sie zum strahlenden Mittelpunkt seiner Skulpturensammlung im Belvedere und ließ sie im <i>Cortile delle Statue</i> aufstellen. Es setzte ein literarischer Austausch unter den Humanisten des 16. Jahrhunderts über die Statue ein und sie wurde in kurzer Zeit vielfach kopiert. Ganz Europa wollte sich den Laokoon aneignen. Und so gelangte auch ein Bronzeabguss an den Hof des französischen Königs Franz I. nach Fontainebleau.</p>\r\n"
+                    },
+                    {
+                        "object": "20",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Apoll vom Belvedere",
+                        "short_text": "",
+                        "text": "<p>Der sog. Apoll vom Belvedere gehörte ebenfalls zur Sammlung Papst Julius II. und steht seit 1508 im <i>Cortile delle Statue</i> des Vatikan. Vom 16. bis zum frühen 19. Jahrhundert galt er als die schönste erhaltene Einzelfigur der Antike. Gipsabgüsse der Statue gehörten bald zu den wichtigsten Studienobjekten im akademischen Kunstbetrieb. Dementsprechend hat ihr Standmotiv zahlreiche Werke der Skulptur und Malerei beeinflusst. Für den Archäologen Johann Joachim Winckelmann war der Apoll vom Belvedere „das höchste Ideal der Kunst unter allen Werken des Altertums“. Winckelmanns Beschreibung des Werkes trug dazu bei, dass der Apoll vom Belvedere besonders die Ästhetik des Klassizismus prägte. Das in die Mitte des 2. Jahrhunderts n. Chr. datierte Werk geht auf ein griechisches Vorbild des 4. Jahrhunderts v. Chr. zurück.</p>\r\n"
+                    },
+                    {
+                        "object": "49",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Kleopatra als Brunnenfigur",
+                        "short_text": "",
+                        "text": "<p>Die sog. Kleopatra war in einer Nische in der nordöstlichen Ecke des <i>Cortile delle Statue</i> als Brunnenfigur inszeniert. Auf einer Skizze Francisco de Hollandas liegt sie vor einem felsigen Hintergrund, aus dem das Wasser in einen römischen Sarkophag fließt. Hollanda hat die Statue in seiner Zeichnung stark auf die linke Seite gedreht, um sie aus der Nische heraus sichtbarer zu machen. Dies entsprach vermutlich nicht der antiken Ansicht. Eine Inschrift auf dem Sarkophag benennt sie als Königin Kleopatra in den Gärten des Papstes. Flankiert wird diese Inschrift durch sog. Tropaia mit Gefangenen als Zeichen der römischen Sieghaftigkeit.</p>\r\n\r\n<p>In den 1550er Jahren verlegte man die Statue in einen anderen Raum und fügte sie in eine künstliche Grotte ein. Dies ist von einer Zeichnung Giovanni Battista Cavalieris aus dem Jahre 1585 bekannt<i>.</i></p>\r\n"
+                    },
+                    {
+                        "object": "50",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Die Statuen im Cortile",
+                        "short_text": "",
+                        "text": "<p>Der hier gezeigte Grundriss ist eine Rekonstruktion des <i>Cortile delle Statue</i> aus dem frühen 15. Jahrhundert. Heute hat der Hof eine andere Gestalt. Der Hof bestand ursprünglich aus einer quadratischen Grundfläche mit abgekanteten Ecken. In diese Ecken, aber auch in die Wände der Hofseiten, waren Nischen eingelassen. Hier standen die Skulpturen. Der sog. Kleopatra in der Nordostecke war in der südwestlichen Ecke eine Statue der Liebesgöttin Venus diagonal gegenübergestellt. Vielleicht wollte man damit auf Kleopatra als die Geliebte des Julius Caesar anspielen, als dessen Nachfolger sich Papst Julius II. sah. In der Südostecke war der Apoll vom Belvedere zu sehen und mittig in der Südwand die Statue des Laokoon. Den universellen Anspruch römischer Macht visualisierten auch die beiden Flussgötter, die frei im Hof standen. Der römische Flussgott Tiber ist hier dem ägyptischen Nil gegenübergestellt.</p>\r\n"
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://asap-cms.bua-dns.de/json/rooms/5"
+            }
+        },
+        {
+            "id": "6",
+            "type": "rooms",
+            "attributes": {
+                "slug": "etappe-5",
+                "datecreated": "2021-11-19T19:37:29+01:00",
+                "datechanged": "2022-08-30T15:25:37+02:00",
+                "datepublish": "2021-11-19T19:37:23+01:00",
+                "datedepublish": "",
+                "ownerid": "2",
+                "status": "published",
+                "templatefields": [],
+                "title": "Raum 5",
+                "position": "5",
+                "claim": "<p>Wie kommt die Statue der Ariadne nach Frankreich?</p>\r\n",
+                "intro": "",
+                "representation": "",
+                "incomingrelation": "",
+                "exhibits": [
+                    {
+                        "object": "52",
+                        "position": "0",
+                        "short_text": "",
+                        "text": "<p>Am 25. Januar 1515 wurde in der Kathedrale von Reims Franz I. (<i>François&nbsp;I</i><i><sup>er</sup></i><i>) </i>zum König von Frankreich gesalbt. Er regierte das Land bis zu seinem Tod 1547.</p>\r\n\r\n<p>Gleich zu Beginn seiner Herrschaft führte Franz I. einen Krieg in Norditalien und konnte dort wichtige Siege erringen. Frankreich galt nun als der militärisch stärkste Staat in Europa. In den Verhandlungen mit dem Papst forderte Franz I. als Zeichen der Anerkennung für sich die berühmtesten antiken Statuen Roms: den Laokoon, den Apoll vom Belvedere und auch die sog. Kleopatra (unsere Ariadne). Die Statuen waren für den französischen König Zeichen seines Anspruchs, in der Tradition des antiken römischen Reiches die Herrschaft über Europa auszuüben. Den Abtransport der Kunstwerke konnte der Papst aber verhindern. Doch Franz I. fand andere Wege, sich die Statuen anzueignen.</p>\r\n",
+                        "slider": "",
+                        "title": "Wie kommt die Statue der Ariadne nach Frankreich?"
+                    },
+                    {
+                        "object": "53",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Fontainebleau als kulturelles Zentrum",
+                        "short_text": "",
+                        "text": "<p>Franz I. baute das südlich von Paris gelegene Schloss Fontainebleau zu seiner Residenz und zu einem kulturellen Zentrum aus. Dafür ließ er zahlreiche Künstler auch aus Italien kommen. Ihre Hauptaufgabe war die glanzvolle Ausstattung des Schlosses mit Bildern, Fresken, Skulpturen, Reliefs und Bildteppichen. Berühmt ist die bis heute gut erhaltene <i>Galerie François Ier</i>, die in den Jahren 1531 bis 1540 gestaltet wurde.</p>\r\n\r\n<p>Einer der wichtigsten Künstler, der für Franz I. arbeitete, war Francesco Primaticcio. Der Italiener leitete ab 1540 die Arbeiten am Schloss und war zugleich im Auftrag des französischen Königs in Rom tätig. Dort ließ er von zahlreichen Statuen Abgüsse anfertigen. Im Rahmen seiner Arbeiten gelangte auch die sog. Kleopatra (unsere Ariadne) als Abguss nach Fontainebleau.</p>\r\n"
+                    },
+                    {
+                        "object": "54",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Eine neue alte ‚Ariadne‘",
+                        "short_text": "",
+                        "text": "<p>Ausgehend von diesen Abgüssen entstanden in Fontainebleau neue Bronzeabgüsse. Und so gelangte Franz I. doch noch in den Besitz der Statuen, die er vergeblich dem Papst abnehmen wollte. Der Laokoon, der Apoll vom Belvedere und auch die sog. Kleopatra (unsere Ariadne) waren nun als ‚neue‘ Skulpturen Teil seiner Residenz. Der Bronzeguss der Kleopatra/Ariadne in Fontainebleau ist zugleich die Vorlage für unseren Abguss in Berlin.</p>\r\n\r\n<p>Doch etwas an der Skulptur der Kleopatra/Ariadne war anders. Obwohl es sich um einen Abguss handelt, weist die Bronzestatue in Fontainebleau starke Veränderungen zu ihrem ‚Original‘ in Rom auf. Sie liegt sehr viel flacher auf dem Felsen und wendet ihren Oberkörper nicht mehr dem Betrachtenden zu. Sind hier beim Abgießen Fehler unterlaufen? Allerdings sind Teile der Statue nicht antik, sondern später ergänzt worden. Dazu zählen der gesamte Felsen und die Spitze ihrer rechten Hand. Vielleicht hat sich erst durch eine Restaurierung und neue Ergänzungen im 18. Jahrhundert die Haltung der Statue verändert? Die Ariadne in Fontainebleau ist damit auf jeden Fall eine eigene Version.</p>\r\n"
+                    },
+                    {
+                        "object": "55",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Fontainebleau – das neue Rom",
+                        "short_text": "",
+                        "text": "<p>Mit den Bronzeabgüssen Primaticcios schuf Franz I. in Fontainebleau einen „Belvederehof auf französischem Boden“. Ganz im Sinne einer <i>Translatio Imperii</i> knüpfte er damit nicht nur an die Machtansprüche Julius II. an, sondern ganz grundsätzlich an die der römischen Kaiser. Das antike Rom war die Referenz, vor der er die Hegemonie in Italien und in Europa betrieb. Fontainebleau wurde durch die Skulpturen zu seinem neuen Rom.</p>\r\n\r\n<p>Das Reproduzieren und anschließende Verfügen über die Kunstwerke zu herrschaftlichen Zwecken bedeuteten dem französischen König zu diesem Zeitpunkt möglicherweise mehr, als der Besitz der Originale. Der im Modus der technischen Reproduzierbarkeit hergestellte Abguss schuf ein zweites, neues Original mit einem autonomen Kunstanspruch. Dies wurde dem Vorbild sogar als überlegen angesehen.</p>\r\n"
+                    },
+                    {
+                        "object": "56",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Katharina von Medici und Kleopatra",
+                        "short_text": "",
+                        "text": "<p>Auch nach dem Tod des Königs behielten die Skulpturen in Fontainebleau ihre Bedeutung bzw. wurde neu arrangiert. Katharina von Medici – die aus Florenz stammende königliche Witwe (Gattin Heinrich II.) und Königin Mutter – ließ sich in den 1560er Jahren in Fontainebleau einen Garten einrichten. Hier wurden die Bronzestatuen neu aufgestellt. Der Garten ist heute noch als <i>Jardin de Diane</i> bekannt. Die sog. Kleopatra spielte für Katharina hierbei eine besondere Rolle. War doch die ägyptische Königin als Herrscherin eines eigenen Reiches und zugleich Geliebte der römischen Weltherrscher ebenfalls eine Exilantin und damit für Katharina ein gloreicher Bezugspunkt.</p>\r\n\r\n<p>Heute ist die Statue der Kleopatra/Statue Ariadne in einer Remise an dem mittlerweile veränderten Garten der Königin (<i>Jardin de Diane</i>) aufgestellt, gemeinsam mit den anderen Bronzen des Primaticcio.</p>\r\n"
+                    },
+                    {
+                        "object": "57",
+                        "slider": "",
+                        "position": "0",
+                        "title": "",
+                        "short_text": "",
+                        "text": "<p>Zur Statue der Kleopatra/Ariadne in Fontainebleau sehen Sie auch den folgenden Film.</p>\r\n"
+                    },
+                    {
+                        "object": "58",
+                        "slider": "",
+                        "position": "0",
+                        "title": "",
+                        "short_text": "",
+                        "text": "<p>Die Bronzestatue Primaticcios wirkte auch später in Frankreich weiter. So orientierte sich der französische König Ludwig XIV. im 17. Jahrhundert auf der Suche nach einer neuen ‚Kleopatra‘ für sein Schloss in Versailles an der Statue in Fontainebleau. Das ‚Original‘ in Rom galt zu diesem Zeitpunkt als beschädigt.</p>\r\n"
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://asap-cms.bua-dns.de/json/rooms/6"
+            }
+        },
+        {
+            "id": "7",
+            "type": "rooms",
+            "attributes": {
+                "slug": "etappe-6",
+                "datecreated": "2021-11-19T19:37:45+01:00",
+                "datechanged": "2022-08-30T15:25:56+02:00",
+                "datepublish": "2021-11-19T19:37:39+01:00",
+                "datedepublish": "",
+                "ownerid": "2",
+                "status": "published",
+                "templatefields": [],
+                "title": "Raum 6",
+                "position": "6",
+                "claim": "<p>Was geschieht mit der Statue im Vatikan?</p>\r\n",
+                "intro": "",
+                "representation": "",
+                "incomingrelation": "",
+                "exhibits": [
+                    {
+                        "object": "6",
+                        "position": "0",
+                        "short_text": "",
+                        "text": "<p>Mitte des 16. Jahrhunderts wurde die sog. Kleopatra als Brunnenfigur und Teil einer künstlichen Grotte in einem neuen Raum des Vatikans aufgestellt. Den Raum bezeichnete man nun als <i>Stanza della Cleopatra</i>. Das Wasser beschädigte die Statue allerdings so sehr, dass sie als Vorlage für weitere Abgüsse nicht mehr taugte.</p>\r\n\r\n<p>In den Jahren 1772 und 1773 erfolgte eine grundlegende Restaurierung der Statue. Die Wasserschäden wurden beseitigt und neue Ergänzungen angebracht. Der gesamte Felsen, aber auch die mit dem Felsen verbundene rechte Hand, sind nicht antik. Sie waren zu einem frühen Zeitpunkt angebracht worden, wurden nun abgenommen und neu ergänzt. In diesem Prozess haben sich möglicherweise Veränderungen ergeben. Die Lagerung der Figur – stärker aufgerichtet und zu den Betrachtenden geneigt – ist vielleicht eine Folge dieser Restaurierung. Das könnte die Unterschiede zu dem älteren Abguss in Fontainebleau erklären.</p>\r\n",
+                        "slider": "",
+                        "title": "Was geschieht mit der Statue im Vatikan?"
+                    },
+                    {
+                        "object": "59",
+                        "slider": "",
+                        "position": "0",
+                        "title": "",
+                        "short_text": "",
+                        "text": "<p>Seit dem späten 18. Jahrhundert steht die restaurierte Statue – mit einer kurzen Unterbrechung durch den Raub Napoleons – in der <i>Galleria delle Statue</i> des Vatikans. Auf einem Sarkophag gelegen bildet sie den nordwestlichen Abschluss und damit den Blickfang des langen Raumes. Die Gründe für die neuen Ergänzungen und damit die veränderte Haltung der Statue liegen möglicherweise in diesem Aufstellungskontext. Denn erst durch die andere Positionierung auf dem Felsen und die Drehung der Figur zum Betrachtenden hin kann sie aus der erhöhten Position ihre Wirkung in diesem neuen Raum entfalten.</p>\r\n\r\n<p>Dieser Teil des Vatikanischen Museums wurde unter den Päpsten Clemens XIV. und Pius VI. nach 1771 geschaffen. Vincenzo Feoli dokumentierte um 1790 diese neue Situation. Einer seiner Stiche zeigt erstmals die neu eingerichtete <i>Galleria delle Statue </i>mit der Schlafenden Ariadne als Abschluss der nordwestlichen Wand.</p>\r\n"
+                    },
+                    {
+                        "object": "60",
+                        "slider": "",
+                        "position": "0",
+                        "title": "",
+                        "short_text": "",
+                        "text": "<p>Die neue Aufstellung der Statue in der <i>Galeria delle Statue</i> im Vatikan war programmatisch: Zwischen zwei wertvollen Marmorsäulen auf einem Sarkophag bestimmt sie bis heute den Raum. Darüber hinaus zeigte die Rückwand hinter der Skulptur damals ein Wandgemälde mit einer ägyptischen Landschaft von Cristoforo Unterperger. Einer großen Palme vor eine Pyramide war in einer Wüstenlandschaft die Statue eines Antinoos-Osiris gegenübergestellt. ‚Kleopatra‘ wurde so ganz in ihrem ägyptischen Umfeld gezeigt. Bei dem Antinoos-Osiris handelte es sich vermutlich um das Abbild einer 1739 in der Villa Hadriana gefundenen römisch-ägyptisierenden Statue.</p>\r\n\r\n<p>Doch zu dieser Zeit kamen Zweifel an der Benennung der ‚Kleopatra‘ auf. Der Archäologe Johann Joachim Winckelmann glaubte bereits nicht, dass allein der Armreif in Form einer Schlange für eine Benennung der Statue als Kleopatra ausreiche. Viele sahen in ihr auch eine schlafende Nymphe.</p>\r\n"
+                    },
+                    {
+                        "object": "61",
+                        "slider": "",
+                        "position": "0",
+                        "title": "",
+                        "short_text": "",
+                        "text": "<p>Nach Kampfhandlungen zwischen dem revolutionären Frankreich und dem Kirchenstaat kam es 1797 zum Vertrag von Tolentino. Der unterlegene Papst musste als Folge seiner Niederlage zahlreiche Kunstschätze nach Frankreich abgeben. Sie wurden dort im Louvre (später Musée Napoléon) ausgestellt. Unter diesen befand sich auch die sog. Kleopatra. Hier in Paris konnte Ennio Quirino Visconti durch Bildvergleiche aufzeigen, dass es sich bei der liegenden Statue nicht um Kleopatra, sondern um Ariadne handelt. Visconti war Leiter der Antikensammlung des Pariser Louvre/Musée Napoléon. Ein Stich aus dem Jahre 1804 zeigt Ariadne aus dieser Zeit ohne einige der Ergänzungen (so fehlt ihre rechte Hand). Vielleicht wurden auch in Paris weitere Veränderungen an der Statue vorgenommen. 1816 kehrte die als Kleopatra nach Paris gekommen Skulptur als Ariadne in den Vatikan zurück.</p>\r\n"
+                    },
+                    {
+                        "object": "62",
+                        "slider": "",
+                        "position": "0",
+                        "title": "",
+                        "short_text": "",
+                        "text": "<p>Nach ihrer Rückkehr 1815 in den Vatikan wurde die Schlafende Ariadne wieder in der <i>Galeria delle Statue</i> an alter Stelle aufgestellt. Die ägyptische Landschaft im Hintergrund ersetzte man aber durch eine rote Fläche. So ist sie heute noch zu sehen. Gleichzeitig war 1797 auch die Bronzestatue der Ariadne aus Fontainebleau nach Paris gelangt. Sie stand lange Zeit in den Tuilerien und wurde erst 1967 nach Fontainebleau zurückgeführt. Beide Statuen sahen aber nun sehr unterschiedlich aus, obwohl die eine doch der Abguss der anderen war. Doch die Veränderungen an dem römischen ‚Original‘ seit dem 18. Jahrhundert hatten zwei unterschiedliche Statuen entstehen lassen.</p>\r\n"
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://asap-cms.bua-dns.de/json/rooms/7"
+            }
+        },
+        {
+            "id": "8",
+            "type": "rooms",
+            "attributes": {
+                "slug": "etappe-7",
+                "datecreated": "2021-11-19T19:37:59+01:00",
+                "datechanged": "2022-11-07T22:40:37+01:00",
+                "datepublish": "2021-11-19T19:37:52+01:00",
+                "datedepublish": "",
+                "ownerid": "2",
+                "status": "published",
+                "templatefields": [],
+                "title": "Raum 7",
+                "position": "7",
+                "claim": "<p>Eine Schlafende Ariadne <b>aus</b> Berlin?</p>\r\n",
+                "intro": "",
+                "representation": "",
+                "incomingrelation": "",
+                "exhibits": [
+                    {
+                        "object": "63",
+                        "position": "0",
+                        "short_text": "",
+                        "text": "<p>In den Jahren 1858 bis 1860 gelangte ein Abguss der Schlafenden Ariadne von Paris nach Berlin. Es handelte sich um einen Gipsabguss der Ariadne Primaticcios aus Fontainebleau. Vermittelt wurde dieser Transfer vermutlich von dem französischen Architekten deutscher Herkunft Jakob Ignaz Hittorf.</p>\r\n\r\n<p>Der Abguss aus Frankreich wurde bald nach seinem Eintreffen in der Berliner Gipsformerei zu einem Formmodell umgearbeitet. In mehrere Teile zerlegt erfolgte zunächst ein Überzug mit Schelllack. Dies diente der besseren Abformung. Anschließend nahm man von diesem Modell Negativformen (sog. Gipsstückformen) ab und konnte nun eigene Abgüsse herstellen. Es folgte eine Verbreitung der Skulptur, die von Berlin ausging.</p>\r\n",
+                        "slider": "",
+                        "title": "Eine Schlafende Ariadne aus Berlin?"
+                    },
+                    {
+                        "object": "64",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Irrungen und Wirrungen",
+                        "short_text": "",
+                        "text": "<p>Das Wissen, um welche Ariadne es sich bei der Skulptur handelt, scheint in Berlin verloren gegangen zu sein. Im Verkaufskatalog der Gipsformerei von 1871 wird als das Original der Statue „Rom, Vatikan“ angegeben.&nbsp; Im Verzeichnis von 1880 ist diese Angabe handschriftlich durchgestrichen und durch die Angabe „Madrid, Mus.“ ersetzt worden. Auch in den folgenden Verkaufskatalogen von 1882, 1893 und 1906 lesen wir als Standort des Originals „Madrid“.</p>\r\n\r\n<p>Wie kommt es zu dieser Verwirrung? Der Berliner Abguss war auch im Neuen Museum auf der Museumsinsel ausgestellt. In den 1870er Jahren kam dann aber zusätzlich direkt aus Rom ein neuer Abguss der vatikanischen Ariadne nach Berlin. Da man die Unterschiede erkannte, von der Herkunft der Ariadne aus Fontainebleau aber nichts mehr wusste, deklarierte man diese kurzerhand (und ungeprüft) in „Madrid“ um. Man glaubte, es handele sich um einen Abguss des Originals im Prado.</p>\r\n"
+                    },
+                    {
+                        "object": "65",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Eine unter vielen Namen",
+                        "short_text": "",
+                        "text": "<p>Als „Ariadne Madrid“ wurde die Statue 1885 auch ausführlich im Katalog zum Neuen Museum beschrieben. Der Verkaufskatalog der Gipsformerei von 1928 bot die Statue dann aber wieder als vatikanische Ariadne an. Dass es sich bei allen diesen verschiedenen Benennungen immer um die gleiche Skulptur handelte, kann an den Inventarnummern abgelesen werden.</p>\r\n\r\n<p>Sowohl das alte Formmodell als auch die frühesten Negativformen haben sich bis heute in Berlin erhalten. Das Verzeichnis der Berliner Gipsformerei von 1871 listet die liegende Ariadne zunächst unter der Inventarnummer 88 (vermutlich I A 88) auf. Später wechselt die Inventarnummern zu 106 und ab 1882 wird sie in den Verkaufskatalogen unter der Inventarnummer 206 aufgeführt. Diese Nummer trägt sie heute noch.</p>\r\n"
+                    },
+                    {
+                        "object": "66",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Die Spur der Inventarnummern",
+                        "short_text": "",
+                        "text": "<p>Auf der Ummantelung einer der in Teilstücken angefertigten Negativformen ist die erste Inventarnummer I A 88 noch zu lesen. Sie wurde später durchgestrichen und darunter brachte man die neue Nummer I B 106 an, später geändert in 206. Auch im Verkaufskatalog von 1871 ist die Schlafende Ariadne unter der Nummer 88 ausgeführt, daneben wurde die Zahl 206 handschriftlich nachgetragen. Und diese 206 befindet sich auch auf dem ausgestellten Formmodell. Das beweist, dass alle Verkaufskataloge der Berliner Gipsformerei seit 1871 die gleiche Ariadne anbieten – die bekannte Ariadne aus Fontainebleau – wenn auch unter verschiedenen Namen und verschiedenen Inventarnummern.</p>\r\n\r\n<p>Die Spur der Inventarnummern belegt aber auch, dass die heute noch erhaltenen Negativformen aus der Zeit vor 1871 stammen.</p>\r\n"
+                    },
+                    {
+                        "object": "67",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Von Berlin in die Welt",
+                        "short_text": "",
+                        "text": "<p>Der Gipsabguss der Ariadne aus Fontainebleau wurde im späten 19. und frühen 20. Jahrhundert von der Berliner Gipsformerei aus in die Welt verkauft. Diese Abgüsse wurden zum Bestandteil zahlreicher akademischer Lehrsammlungen, sie gingen nach Jena, Leipzig und vermutlich auch in die USA nach New York oder an die Cornell University in Ithaka, NY. Dass man sich auch in diesen Sammlungen mit der Zuordnung oft schwertat, belegt ein Foto der Cornell University: Es zeigt den Zustand der Sammlung im späten 19. Jahrhundert und am Ende des Raumes ist auch die Schlafende Ariadne zu sehen. Um sie vermutlich an das vermeintliche ‚römische Original‘ – der Ariadne aus dem Vatikan – anzugleichen, wurde sie auf einem schrägen Sockel positioniert. Man war offensichtlich mit der Haltung der ‚Fontainebleau-Ariadne‘ nicht zufrieden.</p>\r\n"
+                    },
+                    {
+                        "object": "68",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Die Spur der ‚Formen‘",
+                        "short_text": "",
+                        "text": "<p>Dass viele dieser Abgüsse aus den alten Berliner Formen stammen, legt der Abguss unserer Ausstellung nahe. Er wurde im 19. Jahrhundert von der Universität Jena erworben und in den 1980er Jahren an die Staatlichen Museen zu Berlin/DDR abgegeben. Dieser Abguss weist noch die Gussnähte auf, die beim Abgießen aus einer Negativform mit vielen einzelnen Teilstücken entstehen. Die alten Negativformen der Berliner Gipsformerei (hier exemplarisch ein Teilstück vom Fuß) passen auch heute nicht nur genau an das Stück an, die Gussnähte entsprechen auch genau der Teilstückform.</p>\r\n\r\n<p>Die Berliner Abgüsse der Schlafenden Ariadne, die im 19. Jahrhundert im Neuen Museum ausgestellt waren, wurden 1950/51 mit der gesamten Berliner Abguss-Sammlung zerstört.</p>\r\n"
+                    },
+                    {
+                        "object": "69",
+                        "slider": "",
+                        "position": "0",
+                        "title": "Abguss – Kopie – Original: ein verwirrendes Spiel",
+                        "short_text": "",
+                        "text": "<p>Die Schlafende Ariadne in Berlin ist ein Abguss nach einer Bronze der&nbsp;Renaissance, die sich heute in Fontainebleau befindet. Diese Renaissance-Statue ist aufgrund ihrer Einzigartigkeit ein Original und zugleich selbst der Abguss nach einer römischen Marmorstatue im Vatikan. Beide Statuen weichen allerdings voneinander ab, denn die Statue im Vatikan weist durch neuzeitliche Ergänzungen eine andere Haltung auf. Auch diese römische Marmorstatue ist Original (für den Abguss) und zugleich die Kopie nach einer nicht mehr existenten griechischen Skulptur. Das <i>ur-</i>sprüngliche griechische Original ist verschollen und lässt sich nur durch die verschiedenen römischen ‚Kopien‘ rekonstruieren.</p>\r\n\r\n<p>Es ist ein verwirrendes Spiel, beinahe ein Labyrinth. Es zeigt aber die Komplexität der Überlieferung einer Skulptur auf.</p>\r\n"
+                    },
+                    {
+                        "object": "70",
+                        "slider": "",
+                        "position": "0",
+                        "title": "",
+                        "short_text": "",
+                        "text": "<p>Und selbst die Abgüsse von dem Berliner Modell – später wurden von diesem neue Negativformen aus Silikon hergestellt –&nbsp; können Kopie und Original zugleich sein. Denn der US-amerikanische Künstler Jeff Koons hat genau diese Ariadne aus der Berliner Gipsformerei mit einem blauen Ball versehen und zum originalen Kunstwerk erklärt. Unter Label „Gazing Ball (Ariadne)“ wird es zu kunstmarktüblichen Preisen verkauft.</p>\r\n\r\n<p>Wir hoffen, Sie trotz dieser Irrungen und Wirrungen mit dem roten Faden der Ariadne ein wenig durch dieses Labyrinth der Überlieferung einer Statue geleitet zu haben.</p>\r\n"
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://asap-cms.bua-dns.de/json/rooms/8"
+            }
+        }
+    ]
+}

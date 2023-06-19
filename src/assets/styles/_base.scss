@@ -20,8 +20,10 @@
   --secondary-dark: hsl(206, 48%, 28%);
   --color-dark-ultra: hsl(0,0%,0%);
   --font-primary: 'Monserrat';
-  --font-size-normal: 1.25rem;
-  --font-size-small: 1rem;
+  --font-size-small: 75rem;
+  --font-size-normal: 1rem;
+  --font-size-large: 1.25rem;
+
 
   --bc-night: hsl(0,0%,0%);
 
@@ -62,17 +64,28 @@
 
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 480px) {
   :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
+    --font-size-small: 1rem;
+    --font-size-normal: 1.125rem;
+    --font-size-large: 1.25rem;
+  }
+}
+@media (min-width: 768) {
+  :root {
+    --font-size-small: 1rem;
+    --font-size-normal: 1.25rem;
+    --font-size-large: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
+  }
+}
+@media (min-width: 1200px) {
+  :root {
 
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
   }
 }
 

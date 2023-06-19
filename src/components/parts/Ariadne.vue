@@ -124,7 +124,6 @@ function unsetHoveredRoom() {
             </svg>
         </div>
         <div v-if="mode === 'nav'" class="instructions">
-            <!-- aus Bolt einlesen! -->
             <p v-if="themeData">{{ hint }}</p>
         </div>
         <div v-if="mode === 'back'" class="instructions">
@@ -156,7 +155,7 @@ function unsetHoveredRoom() {
         color: var(--color-text-inverse);
         margin-bottom: 2.5rem;
         min-height: 3rem;
-        font-size: 1.25rem;
+        font-size: var(--font-size-normal);
         line-height: 1.25;
     }
     &.back .room-info-preview {
@@ -187,11 +186,10 @@ function unsetHoveredRoom() {
             left: 0;
         }
     }
-gi
     .instructions {
         margin-top: 2rem;
         text-align: center;
-        font-size: 1rem;
+        font-size: var(--font-size-small);
         color: var(--color-text-inverse);
         p {
             max-width: 32rem;
@@ -200,7 +198,7 @@ gi
         a {
             color: var(--color-text-inverse);
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: var(--font-size-large);
             &:hover {
                 color: var(--color-text-inverse-highlighted);
             }

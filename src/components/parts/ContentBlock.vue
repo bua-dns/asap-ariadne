@@ -39,7 +39,7 @@ const props = defineProps({
     min-height: calc(100vh - 96px);
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: var(--font-size-large);
     line-height: 1.6;
     .text-section {
         max-width: 48rem;

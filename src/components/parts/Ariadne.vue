@@ -165,7 +165,7 @@ function unsetHoveredRoom() {
         width: 36rem;
     }
     &.nav .image-map {
-        width: 38rem;
+        width: 12rem;
     }
     .image-map {
         position: relative;
@@ -224,4 +224,189 @@ function unsetHoveredRoom() {
         opacity: 0.08;
     }
 }
+
+ @media (min-width: 480px) {
+    .ariadne {
+        .apparatus-links {
+            a {
+            }
+        }
+        .room-info-preview {
+
+        }
+        &.back .room-info-preview {
+        }
+        &.back .image-map {
+        }
+        &.nav .image-map {
+        }
+        .image-map {
+            svg {
+                .raum {
+                }
+            }
+            .hover-display {
+            }
+        }
+        .instructions {
+            p {
+            }
+            a {
+                &:hover {
+                }
+            }
+        }
+        .apparatus-links {
+        }
+        .raum {
+
+            &:hover {
+            }
+            &.visited {
+                &:hover {
+                }
+            }
+        }
+        .raum.visited {
+        }
+    }
+ }
+ @media (min-width: 768px) {
+    .ariadne {
+        .apparatus-links {
+            a {
+            }
+        }
+        .room-info-preview {
+
+        }
+        &.back .room-info-preview {
+        }
+        &.back .image-map {
+        }
+        &.nav .image-map {
+        }
+        .image-map {
+            svg {
+                .raum {
+                }
+            }
+            .hover-display {
+            }
+        }
+        .instructions {
+            p {
+            }
+            a {
+                &:hover {
+                }
+            }
+        }
+        .apparatus-links {
+        }
+        .raum {
+
+            &:hover {
+            }
+            &.visited {
+                &:hover {
+                }
+            }
+        }
+        .raum.visited {
+        }
+    }
+ }
+ @media (min-width: 1024px) {
+    .ariadne {
+        .apparatus-links {
+            a {
+            }
+        }
+        .room-info-preview {
+
+        }
+        &.back .room-info-preview {
+        }
+        &.back .image-map {
+        }
+        &.nav .image-map {
+        }
+        .image-map {
+            svg {
+                .raum {
+                }
+            }
+            .hover-display {
+            }
+        }
+        .instructions {
+            p {
+            }
+            a {
+                &:hover {
+                }
+            }
+        }
+        .apparatus-links {
+        }
+        .raum {
+
+            &:hover {
+            }
+            &.visited {
+                &:hover {
+                }
+            }
+        }
+        .raum.visited {
+        }
+    }
+ }
+ @media (min-width: 1200px) {
+    .ariadne {
+        .apparatus-links {
+            a {
+            }
+        }
+        .room-info-preview {
+
+        }
+        &.back .room-info-preview {
+        }
+        &.back .image-map {
+        }
+        &.nav .image-map {
+        }
+        .image-map {
+            svg {
+                .raum {
+                }
+            }
+            .hover-display {
+            }
+        }
+        .instructions {
+            p {
+            }
+            a {
+                &:hover {
+                }
+            }
+        }
+        .apparatus-links {
+        }
+        .raum {
+
+            &:hover {
+            }
+            &.visited {
+                &:hover {
+                }
+            }
+        }
+        .raum.visited {
+        }
+    }
+ }
 </style>

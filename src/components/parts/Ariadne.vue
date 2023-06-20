@@ -165,7 +165,7 @@ function unsetHoveredRoom() {
         width: 36rem;
     }
     &.nav .image-map {
-        width: 12rem;
+        width: 16rem;
     }
     .image-map {
         position: relative;

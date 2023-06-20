@@ -75,51 +75,154 @@ const contentBlocks = computed(() => {
 </template>
 
 <style lang="scss">
-.intro {
-  background-color: #000;
-  min-height: calc(100vh - var(--header-height));
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  .title-content {
-    color: var(--color-text-inverse);
-    width: var(--content-base-width);
-    margin: 0 auto;
-    h1, h2, h3 {
-      color: var(--text-color-inverse);
+.exhibition {
+  .intro {
+    background-color: #000;
+    min-height: var(--tile-min-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--font-size-large);
+    .title-content {
+      color: var(--color-text-inverse);
+      max-width: var(--content-width);
+      text-align: center;
+      margin: 0 auto;
+      h1, h2, h3 {
+        color: var(--text-color-inverse);
+      }
+      h1 {
+        font-size: 1.75rem;
+        font-weight: 700;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
     }
-    h1 {
-      font-size: 4rem;
-      font-weight: 700;
+  }
+  .content-block {
 
-    }
-    h2 {
-      font-size: 2rem;
+  }
+  .nav-footer {
+    background-color: var(--bc-night);
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .exhibition-nav {
+      max-width: 50rem;
+      margin: 0 auto;
+      padding: 2.5rem 0;
     }
   }
 }
-.content-block {
 
-}
+@media (min-width: 480px) {
+  .exhibition {
+    .intro {
 
+      .title-content {
+        h1, h2, h3 {
+          }
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }      
+      }
+    }
+    .content-block {
 
-.nav-footer {
-  background-color: var(--bc-night);
-  min-height: calc(100vh - var(--header-height));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  .exhibition-nav {
-    max-width: 50rem;
-    margin: 0 auto;
-    padding: 2.5rem 0;
+    }
+    .nav-footer {
+
+      .exhibition-nav {
+
+      }
+    }
   }
 }
+@media (min-width: 768px) {
+  .exhibition {
+    .intro {
 
+      .title-content {
 
+        h1, h2, h3 {
+        }
+        h1 {
+          font-size: 4rem;
+
+        }
+        h2 {
+          font-size: 2rem;
+        }      
+        
+      }
+    }
+    .content-block {
+
+    }
+    .nav-footer {
+
+      .exhibition-nav {
+
+      }
+    }
+  }
+}
 @media (min-width: 1024px) {
-  
+  .exhibition {
+    .intro {
+
+      .title-content {
+
+        h1, h2, h3 {
+        }
+        h1 {
+
+        }
+        h2 {
+        }      
+      }
+    }
+    .content-block {
+
+    }
+    .nav-footer {
+
+      .exhibition-nav {
+
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .exhibition {
+    .intro {
+
+      .title-content {
+
+        h1, h2, h3 {
+        }
+        h1 {
+
+        }
+        h2 {
+        }      
+      }
+    }
+    .content-block {
+
+    }
+    .nav-footer {
+
+      .exhibition-nav {
+
+      }
+    }
+  }
 }
 </style>

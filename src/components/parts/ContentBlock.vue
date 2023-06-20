@@ -35,7 +35,7 @@ const props = defineProps({
 <style lang="scss">
 .block-element {
     margin: 0 auto;
-    max-width: var(--content-base-width);
+    max-width: var(--content-width);
     min-height: calc(100vh - 96px);
     display: flex;
     align-items: center;

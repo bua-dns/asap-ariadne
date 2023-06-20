@@ -4,14 +4,13 @@
   --header-color: hsl(0, 0%, 100%);
   --fly-out-color: hsl(0, 0%, 98%);
   --fly-out-color: hsl(46,31%, 98%);
-  --content-base-width: 78rem;
+  --content-width: 78rem;
   --exhibits-width: 84rem;
 
   --component-gap: 4rem;
   --component-y-padding: 4rem;
 
 
-  // --page-width: 74rem;
   --color-text: rgb(20,20,20);
   --color-text-inverse: hsl(0,0%,96%);
   --color-text-inverse-highlighted: hsl(0,0%,86%);
@@ -23,6 +22,8 @@
   --font-size-small: 75rem;
   --font-size-normal: 1rem;
   --font-size-large: 1.25rem;
+
+  --tile-min-height: calc(100vh - var(--header-height));
 
 
   --bc-night: hsl(0,0%,0%);

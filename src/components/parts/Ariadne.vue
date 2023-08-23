@@ -142,6 +142,7 @@ function unsetHoveredRoom() {
 
 <style lang='scss' scoped>
 .ariadne {
+    display: none;
     .apparatus-links {
         margin: 4rem 1rem 2rem;
         text-align: center;
@@ -227,6 +228,7 @@ function unsetHoveredRoom() {
 
  @media (min-width: 480px) {
     .ariadne {
+        display: block;
         .apparatus-links {
             a {
             }

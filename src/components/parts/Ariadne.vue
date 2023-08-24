@@ -4,15 +4,15 @@ import { useRouter } from 'vue-router';
 import { useFetchRoomPreviews } from '@/composables/useFetchRoomPreviews.js';
 import { useFetchTheme } from '@/composables/useFetchTheme.js';
 import { useRoomsStateStore } from '@/stores/rooms-state.js';
+import { useFetchRoomsInfo } from '@/composables/useFetchRoomsInfo.js';
+
+const { data:roomsInfoData } = useFetchRoomsInfo();
 
 const store = useRoomsStateStore();
 
 const { data, isFetching, error } = useFetchRoomPreviews();
 const { themeData, themeIsFetching, themeError } = useFetchTheme();
 
-const hint = computed(() => {
-    return themeData.value.data[0].attributes.navi_hint
-})
 
 const previews = computed(() => {
     let previewIndex = {};
@@ -63,15 +63,11 @@ function unsetHoveredRoom() {
     <div v-if="data" class="ariadne" :class="mode">
         <div class="room-info-preview" >
             <template v-if="roomInfo">
-                <div class="room-number">Raum {{ roomInfo.number }}</div>
-                <div class="room-title">{{ roomInfo.title }}</div>
+                <div>{{ roomInfo.number }} - {{ roomInfo.title }}</div>
             </template>
         </div>
-        <div 
-            class="image-map"
-            
-        >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580.9919 305.3723">
+        <div class="image-map">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580.9919 305.3723">
                 <g id="Raum_1" data-name="Raum 1" 
                     @click="gotoRoom(1)" 
                     @mouseenter="setHoveredRoom(1)" @mouseleave="unsetHoveredRoom()"
@@ -123,17 +119,14 @@ function unsetHoveredRoom() {
                 </g>
             </svg>
         </div>
-        <div v-if="mode === 'nav'" class="instructions">
-            <p v-if="themeData">{{ hint }}</p>
-        </div>
-        <div v-if="mode === 'back'" class="instructions">
-            
-            <RouterLink to="/#ariadne">Startseite</RouterLink>
-
-        </div>
-        <div class="apparatus-links">
-            <router-link to="/page/impressum">Impressum</router-link> |
-            <router-link to="/page/datenschutz">Datenschutz</router-link>
+        <div class="room-buttons" v-if="roomsInfoData && mode === 'nav'">
+            <div class="room-button"
+              v-for="(room, index) in roomsInfoData.data"
+              :key="`room-${index}`"
+              @click="gotoRoom(room.attributes.position)"
+            >
+              {{ room.attributes.position }}
+            </div>
         </div>
     </div>
 </template>
@@ -151,22 +144,24 @@ function unsetHoveredRoom() {
         }
     }
     
+    .room-number {
 
+    }
     .room-info-preview {
         color: var(--color-text-inverse);
         margin-bottom: 2.5rem;
         min-height: 3rem;
         font-size: var(--font-size-normal);
         line-height: 1.25;
-    }
-    &.back .room-info-preview {
-        display: none;
+        > div {
+            text-align: center;
+        }
     }
     &.back .image-map {
         width: 36rem;
     }
     &.nav .image-map {
-        width: 16rem;
+        width: 36rem;
     }
     .image-map {
         position: relative;
@@ -223,6 +218,18 @@ function unsetHoveredRoom() {
     }
     .raum.visited {
         opacity: 0.08;
+    }
+    .room-buttons {
+        margin: 2rem auto; 
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        color: var(--color-text-inverse);
+        .room-button {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            background-color: hsla(0, 0%, 100%, 0.1);
+        }	
     }
 }
 
@@ -408,6 +415,14 @@ function unsetHoveredRoom() {
             }
         }
         .raum.visited {
+        }
+    }
+ }
+ // Touch vs Mouse
+ @media (hover: hover) {
+    .ariadne {
+        .room-buttons {
+            display: none;
         }
     }
  }

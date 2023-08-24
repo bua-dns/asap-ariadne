@@ -139,38 +139,56 @@ trackScroll();
     </template>
     <div class="page-nav" v-if="roomsInfoData">
       <div class="pagination">
-        <div class="nav-prev pagination-control">
-          <RouterLink
-          :to="`/room/${roomsNavi.previousRoom.position}`" 
-            v-if="roomsNavi.previousRoom" 
-            class="nav-element"
-          >
-              <div class="title">
-                {{ roomsNavi.previousRoom.title }}
-              </div>
+        <div class="image-map-nav">
+          <Ariadne mode="back"/>
+        </div>
+        <div class="textual-nav">
+          <div class="nav-prev pagination-control" v-if="true">
+            <RouterLink
+            :to="`/room/${roomsNavi.previousRoom.position}`" 
+              v-if="roomsNavi.previousRoom" 
+              class="nav-element"
+            >
+              <div class="icon"><NavIcon dir="left"/></div>
               <div class="position">
                   {{ roomsNavi.previousRoom.position }}
               </div>  
-            <div class="icon"><NavIcon dir="left"/></div>
-          </RouterLink>
+              <div class="title">
+                {{ roomsNavi.previousRoom.title }}
+              </div>
+            </RouterLink>
+            <div class="placeholder" v-if="!roomsNavi.previousRoom" ></div>
+          </div>
+          <div class="nav-next pagination-control" v-if="true">
+            <RouterLink 
+              :to="`/room/${roomsNavi.nextRoom.position}`" 
+              v-if="roomsNavi.nextRoom" 
+              class="nav-element"
+            >
+              <div class="title">
+                {{ roomsNavi.nextRoom.title }}
+              </div>
+              <div class="position">
+                {{ roomsNavi.nextRoom.position }}
+              </div>
+              <div class="icon"><NavIcon dir="right"/></div>
+            </RouterLink>
+            <div class="placeholder" v-if="!roomsNavi.nextRoom" ></div>
+
+          </div>
         </div>
-        <Ariadne mode="back"/>
-        <div class="nav-next pagination-control">
-          <RouterLink 
-            :to="`/room/${roomsNavi.nextRoom.position}`" 
-            v-if="roomsNavi.nextRoom" 
-            class="nav-element"
-          >
-            <div class="icon"><NavIcon dir="right"/></div>
-            <div class="position">
-              {{ roomsNavi.nextRoom.position }}
-            </div>
-            <div class="title">
-              {{ roomsNavi.nextRoom.title }}
-            </div>
-          </RouterLink>
+      </div>
+      <div class="apparatus">
+        <div v-if="mode === 'nav'" class="instructions">
+            <p v-if="themeData">{{ hint }}</p>
         </div>
-        
+        <div v-if="mode === 'back'" class="instructions">
+            <RouterLink to="/#ariadne">Startseite</RouterLink>
+        </div>
+        <div class="apparatus-links">
+            <router-link to="/page/impressum">Impressum</router-link> |
+            <router-link to="/page/datenschutz">Datenschutz</router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -218,57 +236,79 @@ trackScroll();
   }
   .page-nav {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - var(--header-height));
     background-color: black;
     color: var(--color-text-inverse);
     .pagination {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 4rem;
-      .pagination-control {
-        display: flex;
-        align-items: center;
-        .nav-element {
+      display: block;
+      max-width: 42rem;
+      .image-map-nav {
+        
+      }
+      .textual-nav {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        gap: 4rem;
+        .pagination-control {
           display: flex;
-          justify-content: center;
-          gap: 1rem;
-          color: inherit;
-          font-size: 1rem;
-          text-decoration: none;
-          .title {
-            flex-basis: 12rem;
-          }
-          .position {
-            min-height: 2rem;
-            padding: 0 1rem;
-            font-size: 1.5rem;
-          }
-          .icon {
-            flex-basis: 1.5rem;
-            color: var(--color-text-inverse);
-            &:hover {
-              color: var(--color-text-inverse-highlighted);
+          align-items: center;
+          .nav-element {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            color: inherit;
+            font-size: 1rem;
+            text-decoration: none;
+            .title {
+              flex-basis: 12rem;
+            }
+            .position {
+              min-height: 2rem;
+              padding: 0 1rem;
+              font-size: 1.5rem;
+            }
+            .icon {
+              flex-basis: 2rem;
+              color: var(--color-text-inverse);
+              &:hover {
+                color: var(--color-text-inverse-highlighted);
+              }
             }
           }
-        }
-        &.nav-prev {
-          text-align: right;
-          margin-left: auto;
-          .nav-element .position {
-            border-left: 2px solid var(--color-text-inverse);
-          }
-        }
-        &.nav-next {
-          margin-right: auto;
+          &.nav-prev {
+            text-align: left;
+            margin-left: auto;
             .nav-element .position {
-              padding: 0 1rem;
               border-right: 2px solid var(--color-text-inverse);
             }
+          }
+          &.nav-next {
+            text-align: right;
+            margin-right: auto;
+              .nav-element .position {
+                padding: 0 1rem;
+                border-left: 2px solid var(--color-text-inverse);
+              }
+          }
         }
       }
-
+    }
+    .apparatus {
+      margin-top: 4rem;
+      .apparatus-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        a {
+          color: var(--color-text-inverse);
+        }
+      }
     }
   }
 }

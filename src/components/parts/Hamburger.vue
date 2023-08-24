@@ -21,14 +21,15 @@ const { toggleState } = store;
 
 <style lang="scss" scoped>
 .hamburger-container {
+    border: 1px solid blue;
     position: relative;
-    width: 100%;
-    // width: var(--header-height);
+    margin-left: auto;
+    width: 3rem;
     height: var(--header-height);
     .hamburger {
         position: absolute;
         top:50%;
-        right: 0rem;
+        right: .5rem;
         width: 32px;
         height: 4px;
         background: var(--secondary-dark);

@@ -25,6 +25,9 @@
 
   --tile-min-height: calc(100vh - var(--header-height));
 
+  // header responsitivity
+  --header-lateral-elements-width: 8rem;
+
 
   --bc-night: hsl(0,0%,0%);
 
@@ -70,6 +73,7 @@
     --font-size-small: 1rem;
     --font-size-normal: 1.125rem;
     --font-size-large: 1.25rem;
+    --header-lateral-elements-width: 10rem;
   }
 }
 @media (min-width: 768) {
@@ -77,15 +81,18 @@
     --font-size-small: 1rem;
     --font-size-normal: 1.25rem;
     --font-size-large: 1.5rem;
+    --header-lateral-elements-width: 12rem;
   }
 }
 @media (min-width: 1024px) {
   :root {
+    --header-lateral-elements-width: 14rem;
 
   }
 }
 @media (min-width: 1200px) {
   :root {
+    --header-lateral-elements-width: 18rem;
 
   }
 }

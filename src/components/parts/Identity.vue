@@ -12,34 +12,49 @@ import { computed } from 'vue';
 
 <style lang="scss" scoped>
 .identity {
-    min-width: 14rem;
+    border: 1px solid purple;
     height: var(--header-height);
-    padding: 0 2rem;
     display: flex;
+    padding: 0 .5rem;
     align-items: center;
     font-size: 1.4rem;
     .logo {
         display: block;
-        height: calc(var(--header-height) - 2rem);
-        margin-right: auto;
-    }
-    &.desktop {
-    display: none;
-    }
-    &.mobile {
-    display: flex;
+        width: var(--header-lateral-elements-width);
     }
 }
 // RESPONSIVITY
-@media (min-width: var(--break-point-tablet)) {
-    .identity {
 
-        &.desktop {
-            display: flex;
-        }
-        &.mobile {
-            display: none;
+@media (min-width: 480px) {
+    .identity {
+        padding: 0 1rem;
+
+        .logo {
         }
     }
 }
+@media (min-width: 768px) {
+    .identity {
+        padding: 0 1.5rem;
+
+        .logo {
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .identity {
+        padding: 0 2rem;
+
+        .logo {
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .identity {
+
+        .logo {
+        }
+    }
+}
+
 </style>

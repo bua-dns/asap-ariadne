@@ -51,8 +51,6 @@
 
 <template>
     <nav v-if="true">
-        <div class="main-nav">
-        </div>
         <div class="clickable mobile-nav">
             <Hamburger />
         </div>
@@ -117,18 +115,13 @@ h1,h2,h3,h4 {
     font-family: 'M PLUS 2', sans-serif;
 }
  nav {
-    padding: 0 2rem;
-    display: flex;
-    align-items: flex-end;
+    border: 1px solid green;
+    width: 4rem;
     font-size: 1.125rem;
-    .main-nav {
-        display: none;
-        margin-left: auto;
-    }
     .mobile-nav {
         margin-left: auto;
-        height: var(--header-height);
-        width: var(--header-height);
+        // height: var(--header-height);
+        // width: var(--header-height);
     }
     .fly-out {
         position: fixed;
@@ -193,18 +186,7 @@ h1,h2,h3,h4 {
 }
 @media (min-width: 1024px) {
     nav {
-        .main-nav {
-            display: flex;
-            gap: 1rem;
-            margin: 0;
-            list-style: none;
-            margin-bottom: .65rem;
-            margin-right: 5rem;
-            font-size: 1.5rem;
-            .menu-item {
-                flex: 1;
-            }
-        }
+        width: var(--header-lateral-elements-width);
         .fly-out {
             .navi-upper {
                 display: grid;

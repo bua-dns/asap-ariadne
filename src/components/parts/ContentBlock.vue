@@ -39,17 +39,17 @@ const props = defineProps({
     min-height: calc(100vh - 96px);
     display: flex;
     align-items: center;
-    font-size: var(--font-size-large);
     line-height: 1.6;
     .text-section {
         max-width: 48rem;
         margin: 0 auto;
+        padding: 2rem;
+
     }
     .block-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-        padding: 2rem 0;
+        display: block;
+
+        padding: 1rem;
         .block-image {
             display: flex;
             justify-content: center;
@@ -65,10 +65,109 @@ const props = defineProps({
             display: flex;
             flex-direction: column;
             justify-content: center;
+            font-size: var(--font-size-large);
             .content {
                 
             }
         }
     }
 }
+@media (min-width: 480px) {
+    .block-element {
+
+        .text-section {
+
+        }
+        .block-container {
+
+            .block-image {
+
+                img {
+
+                }
+            }
+            .block-text {
+
+                .content {
+                    
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+        .block-element {
+
+        .text-section {
+
+        }
+        .block-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            padding: 2rem;
+            .block-image {
+
+                img {
+
+                }
+            }
+            .block-text {
+
+                .content {
+                    
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px) {
+        .block-element {
+
+        .text-section {
+
+        }
+        .block-container {
+
+            .block-image {
+
+                img {
+
+                }
+            }
+            .block-text {
+
+                .content {
+                    
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .block-element {
+
+        .text-section {
+
+        }
+        .block-container {
+
+            .block-image {
+
+                img {
+
+                }
+            }
+            .block-text {
+
+                .content {
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
 </style>

@@ -91,6 +91,7 @@ const contentBlocks = computed(() => {
 <style lang="scss">
 .exhibition {
   .intro {
+    padding: 0 .5rem;
     background-color: #000;
     min-height: var(--tile-min-height);
     display: flex;
@@ -107,11 +108,11 @@ const contentBlocks = computed(() => {
         color: var(--text-color-inverse);
       }
       h1 {
-        font-size: 1.75rem;
+        font-size: 1.125rem;
         font-weight: 700;
       }
       h2 {
-        font-size: 1.25rem;
+        font-size: 1.0rem;
       }
     }
   }
@@ -184,11 +185,11 @@ const contentBlocks = computed(() => {
         h1, h2, h3 {
         }
         h1 {
-          font-size: 4rem;
+          font-size: 3rem;
 
         }
         h2 {
-          font-size: 2rem;
+          font-size: 1.75rem;
         }      
         
       }
@@ -239,10 +240,12 @@ const contentBlocks = computed(() => {
         h1, h2, h3 {
         }
         h1 {
-
+          font-size: 4rem;
+          font-weight: 700;
         }
         h2 {
-        }      
+          font-size: 2rem;
+        }
       }
     }
     .content-block {

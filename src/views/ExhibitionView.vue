@@ -125,7 +125,6 @@ const contentBlocks = computed(() => {
     flex-direction: column;
     justify-content: center;
     .exhibition-nav {
-      max-width: 50rem;
       margin: 0 auto;
       padding: 2.5rem 0;
     }

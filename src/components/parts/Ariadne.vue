@@ -135,7 +135,7 @@ function unsetHoveredRoom() {
 
 <style lang='scss' scoped>
 .ariadne {
-    display: none;
+    display: block;
     .apparatus-links {
         margin: 4rem 1rem 2rem;
         text-align: center;
@@ -158,10 +158,10 @@ function unsetHoveredRoom() {
         }
     }
     &.back .image-map {
-        width: 36rem;
+        width: 15rem;
     }
     &.nav .image-map {
-        width: 36rem;
+        width: 15rem;
     }
     .image-map {
         position: relative;
@@ -220,10 +220,12 @@ function unsetHoveredRoom() {
         opacity: 0.08;
     }
     .room-buttons {
-        margin: 2rem auto; 
+        margin: 2rem auto;
+        padding: 0 1rem;
         display: flex;
-        justify-content: space-between;
-        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.25rem;
         color: var(--color-text-inverse);
         .room-button {
             padding: 0.5rem 1rem;
@@ -246,8 +248,10 @@ function unsetHoveredRoom() {
         &.back .room-info-preview {
         }
         &.back .image-map {
+            width: 20rem;
         }
         &.nav .image-map {
+            width: 20rem;
         }
         .image-map {
             svg {
@@ -292,8 +296,10 @@ function unsetHoveredRoom() {
         &.back .room-info-preview {
         }
         &.back .image-map {
+            width: 24rem;
         }
         &.nav .image-map {
+            width: 24rem;
         }
         .image-map {
             svg {
@@ -338,8 +344,10 @@ function unsetHoveredRoom() {
         &.back .room-info-preview {
         }
         &.back .image-map {
+            width: 36rem;
         }
         &.nav .image-map {
+            width: 36rem;
         }
         .image-map {
             svg {

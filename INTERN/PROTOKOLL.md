@@ -4,11 +4,15 @@ angelegt: 29.11.2022
 
 Neue Live-Version der Ausstellung
 
+## Stand
+
+Header im Umbau für ein besseres Responsiv-Verhalten
+
 ## to do
 
-- Korrektur der Ariadne als Navi-Element
 - Bildunterschriften
 - Basis-Check Responsiv-Verhalten
+    - Umbau Header mit zwei Struktur-Varianten
 - Clean up in Vorbereitung Launch
 
 

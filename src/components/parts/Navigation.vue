@@ -115,9 +115,11 @@ h1,h2,h3,h4 {
     font-family: 'M PLUS 2', sans-serif;
 }
  nav {
-    border: 1px solid green;
     width: 4rem;
+    display: flex;
+    align-items: center;
     font-size: 1.125rem;
+    padding-right: 1rem;
     .mobile-nav {
         margin-left: auto;
         // height: var(--header-height);
@@ -183,6 +185,52 @@ h1,h2,h3,h4 {
                 }
         }
     }
+}
+@media (min-width: 768px) {
+    nav {
+        .mobile-nav {
+
+        }
+        .fly-out {
+
+            .navi-upper {
+                .fly-out-nav {
+                    .mobile-nav-main {
+                        
+                        }
+                    .mobile-nav-rooms {
+                    }
+                    ul {
+                        li {
+
+                            &:hover {
+                            }
+                        }
+                        &.mobile-nav-rooms {
+                        }
+                    }
+                }
+                .apparatus {
+                    & > div {
+                    }
+                    .apparatus-text {
+                        
+                    }
+
+                }
+            }
+            .navi-footer {
+                .logos {
+                        a {
+                            img {
+
+                            }
+                        }
+                    }
+            }
+        }
+    }
+
 }
 @media (min-width: 1024px) {
     nav {

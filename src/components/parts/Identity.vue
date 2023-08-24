@@ -12,8 +12,6 @@ import { computed } from 'vue';
 
 <style lang="scss" scoped>
 .identity {
-    border: 1px solid purple;
-    height: var(--header-height);
     display: flex;
     padding: 0 .5rem;
     align-items: center;
@@ -36,7 +34,7 @@ import { computed } from 'vue';
 @media (min-width: 768px) {
     .identity {
         padding: 0 1.5rem;
-
+        min-height: var(--header-height);
         .logo {
         }
     }

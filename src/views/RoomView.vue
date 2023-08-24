@@ -300,7 +300,7 @@ trackScroll();
       }
     }
     .apparatus {
-      margin-top: 4rem;
+      margin: 4rem 0;
       .apparatus-links {
         display: flex;
         justify-content: center;

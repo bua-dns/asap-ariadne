@@ -129,7 +129,7 @@ const contentBlocks = computed(() => {
       padding: 2.5rem 0;
     }
     .apparatus {
-      margin: 4rem auto;
+      margin: 4rem 0;
       color: var(--color-text-inverse);
       .instructions {
         max-width: 24rem;

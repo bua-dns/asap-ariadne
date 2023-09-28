@@ -1,4 +1,4 @@
-# Notizen zum Projekt: Relaunchh Ariadne-Ausstellung#
+# Notizen zum Projekt: Relaunchh Ariadne-Ausstellung
 
 angelegt: 29.11.2022
 
@@ -10,10 +10,10 @@ Header im Umbau für ein besseres Responsiv-Verhalten
 
 ## to do
 
-- Bildunterschriften
-- Basis-Check Responsiv-Verhalten
-    - Umbau Header mit zwei Struktur-Varianten
-- Clean up in Vorbereitung Launch
+- nächste Runde Responsive-Anpassungen
+    - Anpassungen Überschriften und Texte (v.a. font-size) systematisieren
+    - Ausschalten Lightbox-Funktion bei kleinen Bildschirmen
+    - Slider responsive machen
 
 
 ## backlog

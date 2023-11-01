@@ -85,11 +85,9 @@ const { closeMobileNav } = store;
       a {
 
         h1 {
-          // font-size: 1.75rem;
-          // margin: 0 0 .25rem 0;
+
         }
         h2 {
-          // font-size: 1.5rem;
 
         }
       }      

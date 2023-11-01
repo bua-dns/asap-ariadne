@@ -127,7 +127,7 @@ h1,h2,h3,h4 {
     }
     .fly-out {
         position: fixed;
-        background-color: var(--fly-out-color);
+        background-color: var(--color-fly-out);
         top: calc(var(--header-height));
         left: 0;
         right: 0;

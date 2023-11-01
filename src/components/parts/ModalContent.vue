@@ -44,7 +44,7 @@ const props = defineProps({
         flex-direction: column;
         justify-content: flex-end;
         gap: 1.5rem;
-        font-size: .85rem;
+        font-size: var(--font-size-small);
         padding: 1rem 1rem 0 1rem;
         .credits{
             

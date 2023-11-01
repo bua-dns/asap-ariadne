@@ -185,7 +185,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2.5rem;
-      font-size: 1.25rem;
+      font-size: var(--font-size-normal);
       line-height: 1.75rem;
       .slider-preview-content {
       }

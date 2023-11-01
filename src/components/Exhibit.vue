@@ -77,13 +77,10 @@
         }
       }
       .exhibit-body {
-        // display: grid;
-        // grid-template-columns: 1fr 1fr;
-        // grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
         display: flex;
         flex-direction: column;
         gap: 3.5rem;
-        font-size: 1.25rem;
+        font-size: var(--font-size-normal);
         line-height: 1.75rem;
         &>div {
           flex: 1;
@@ -107,11 +104,9 @@
           }
         }
         .exhibit-body {
-          font-size: 1.125rem;
-          line-height: 1.5rem;
           flex-direction: row;
-
           &>div {
+
           }
           .video-player {
 
@@ -131,9 +126,7 @@
           }
         }
         .exhibit-body {
-          font-size: 1.25rem;
-          line-height: 1.75rem;
-          flex-direction: row;
+
 
           &>div {
           }

@@ -81,7 +81,7 @@ const toggleModalState = () => {
         .credits {
           margin-top: .5rem;
           text-align: right;
-          font-size: .75rem;
+          font-size: var(--font-size-small);
           opacity: .75;
         }
       }

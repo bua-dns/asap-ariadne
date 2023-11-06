@@ -50,7 +50,6 @@ const toggleModalState = () => {
     >
         <div class="modal-backdrop" @click.self="toggleModalState()">
           <ModalContent :data="props.data"/>
-          
         </div>
         <CloseIcon @click="toggleModalState()" class="icon close-icon" />
     </div>

@@ -15,6 +15,12 @@ Header im Umbau für ein besseres Responsiv-Verhalten
     - Umbau Header mit zwei Struktur-Varianten
 - Clean up in Vorbereitung Launch
 
+## subtask responsives Modal
+
+- Überblick status quo --> auf extra Branch!
+- Konept zoombare Bilder
+- Positionierung der Bildunterschriften abhängig von Bildschirmproportionen und Bildproportionen
+
 
 ## backlog
 

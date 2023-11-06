@@ -108,11 +108,9 @@ const contentBlocks = computed(() => {
         color: var(--text-color-inverse);
       }
       h1 {
-        font-size: 1.125rem;
         font-weight: 700;
       }
       h2 {
-        font-size: 1.0rem;
       }
     }
   }
@@ -120,7 +118,7 @@ const contentBlocks = computed(() => {
 
   }
   .nav-footer {
-    background-color: var(--bc-night);
+    background-color: var(--color-background-dark);
     min-height: calc(100vh - var(--header-height));
     display: flex;
     flex-direction: column;
@@ -157,10 +155,8 @@ const contentBlocks = computed(() => {
         h1, h2, h3 {
           }
         h1 {
-          font-size: 2rem;
         }
         h2 {
-          font-size: 1.5rem;
         }      
       }
     }
@@ -185,11 +181,9 @@ const contentBlocks = computed(() => {
         h1, h2, h3 {
         }
         h1 {
-          font-size: 3rem;
 
         }
         h2 {
-          font-size: 1.75rem;
         }      
         
       }
@@ -240,11 +234,9 @@ const contentBlocks = computed(() => {
         h1, h2, h3 {
         }
         h1 {
-          font-size: 4rem;
           font-weight: 700;
         }
         h2 {
-          font-size: 2rem;
         }
       }
     }

@@ -204,13 +204,14 @@ trackScroll();
 }
 
 .room {
+  padding-top: var(--header-height);
   .room-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - var(--header-height));
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    min-height: calc(100vw * .75);
+    text-align: center;
     h2 {
-      font-size: 3.5rem;
       &.light {
         color: var(--color-text-inverse);
       }
@@ -263,7 +264,6 @@ trackScroll();
             align-items: center;
             gap: 1rem;
             color: inherit;
-            font-size: 1rem;
             text-decoration: none;
             .title {
               flex-basis: 12rem;
@@ -271,7 +271,6 @@ trackScroll();
             .position {
               min-height: 2rem;
               padding: 0 1rem;
-              font-size: 1.5rem;
             }
             .icon {
               flex-basis: 2rem;
@@ -315,6 +314,11 @@ trackScroll();
 
 
 @media (min-width: 1024px) {
+  .room {
+    .room-title {
+      min-height: calc(100vh - var(--header-height));
+    }
+  }
   .about {
     min-height: 100vh;
     display: flex;

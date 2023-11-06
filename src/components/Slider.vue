@@ -177,7 +177,6 @@
     .slider-preview-header {
         margin-bottom: 4rem;
       h3 {
-        font-size: 2rem;
         text-align: center;
       }
     }
@@ -186,7 +185,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 2.5rem;
       font-size: var(--font-size-normal);
-      line-height: 1.75rem;
+      line-height: var(--line-height-normal);
       .slider-preview-content {
       }
       .slider-preview-image {

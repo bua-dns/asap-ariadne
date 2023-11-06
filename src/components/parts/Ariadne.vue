@@ -136,6 +136,7 @@ function unsetHoveredRoom() {
 <style lang='scss' scoped>
 .ariadne {
     display: block;
+    background-color: var(--color-background-dark);
     .apparatus-links {
         margin: 4rem 1rem 2rem;
         text-align: center;
@@ -152,7 +153,7 @@ function unsetHoveredRoom() {
         margin-bottom: 2.5rem;
         min-height: 3rem;
         font-size: var(--font-size-normal);
-        line-height: 1.25;
+        line-height: var(--line-height-small);
         > div {
             text-align: center;
         }

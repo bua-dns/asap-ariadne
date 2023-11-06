@@ -72,7 +72,6 @@
     .exhibit-header {
         margin-bottom: 4rem;
         h3 {
-          font-size: 2rem;
           text-align: center;
         }
       }
@@ -81,7 +80,7 @@
         flex-direction: column;
         gap: 3.5rem;
         font-size: var(--font-size-normal);
-        line-height: 1.75rem;
+        line-height: var(--line-height-normal);
         &>div {
           flex: 1;
         }

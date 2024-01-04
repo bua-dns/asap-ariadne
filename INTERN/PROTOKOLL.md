@@ -15,6 +15,12 @@ Header im Umbau für ein besseres Responsiv-Verhalten
     - Ausschalten Lightbox-Funktion bei kleinen Bildschirmen
     - Slider responsive machen
 
+## subtask responsives Modal
+
+- Überblick status quo --> auf extra Branch!
+- Konept zoombare Bilder
+- Positionierung der Bildunterschriften abhängig von Bildschirmproportionen und Bildproportionen
+
 
 ## backlog
 

@@ -39,11 +39,12 @@ const props = defineProps({
     min-height: calc(100vh - 96px);
     display: flex;
     align-items: center;
-    line-height: 1.6;
+    line-height: var(--line-height-normal);
     .text-section {
         max-width: 48rem;
         margin: 0 auto;
         padding: 2rem;
+        font-size: var(--font-size-large);
 
     }
     .block-container {

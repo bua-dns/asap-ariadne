@@ -10,26 +10,21 @@ const props = defineProps({
 
 <template>
     <div class="modal-content">
-        <div class="left">
-            <p></p>
-          </div>
-          <div class="center image-display">
-            <img :src="props.data.representation.url">
-          </div>
-          <div class="right">
-            <div class="caption" 
-                v-if="props.data.comment" v-html="props.data.comment" />
-            <div class="credits"
-                v-if="props.data.credits" v-html="props.data.credits" />
-          </div>
+        <div class="image-frame">
+            <img :src="data.representation.url">
+        </div>
+        <div class="caption" v-if="data.caption" v-html="data.caption" />
+        <div class="credits" v-if="data.credits" v-html="data.credits" />
+        <pre v-if="false">{{ data  }}</pre>
     </div>
 </template>
 
 <style lang="scss">
 .modal-content {
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     a {
         color: inherit;
         text-decoration: none;
@@ -37,37 +32,22 @@ const props = defineProps({
             text-decoration: underline;
         }
     }
-    &>div {
-    }
-    .left, .right {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 1.5rem;
-        font-size: var(--font-size-small);
-        padding: 1rem 1rem 0 1rem;
-        .credits{
-            
-        }
-    }
-    .center {
+    .image-frame {
+        max-height: 85vh;
+        max-width: 85vw;
         display: flex;
         justify-content: center;
         align-items: center;
         img {
             display: block;
             max-width: 100%;
-            height: auto;
-            max-height: 95vh;
-        }
+            max-height: 85vh;
+        }  
     }
-    // max-height: 85vh;
-    // max-width: 85vw;
-    // cursor:default;
-    // img {
-    //     display: block;
-    //     max-width: 100%;
-    //     max-height: 85vh;
-    // }
+    .credits {
+        margin-top: 1rem;
+        font-size: .8rem;
+        text-align: center;
+    }   
 }
 </style>

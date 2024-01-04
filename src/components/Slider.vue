@@ -42,15 +42,6 @@
 
   const range = computed(() => {
     return [sliderIndex.value];
-    // RESERVE
-    // let index = sliderIndex.value;
-    // let prev = sliderIndex.value -1 < 0
-    //   ? slider.value.exhibits.length - 1
-    //   : sliderIndex.value -1;
-    // let next = sliderIndex.value +1 > slider.value.exhibits.length -1
-    //   ? 0
-    //   : sliderIndex.value +1;
-    // return [prev,index,next]
   });
 
   const { data, isFetching, error } = useFetchSlider(props.sliderContent.slider);
@@ -108,7 +99,7 @@
           <Exhibit
             :exhibitContent="exhibit"
             context="slider"
-            :textColorStyle="props.textColorStyle"
+            textColorStyle="dark"
           />
         </template>
       </div>

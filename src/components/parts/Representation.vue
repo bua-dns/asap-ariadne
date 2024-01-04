@@ -49,7 +49,7 @@ const toggleModalState = () => {
         @scroll.prevent
     >
         <div class="modal-backdrop" @click.self="toggleModalState()">
-          <ModalContent :data="props.data"/>
+          <ModalContent :data="data"/>
         </div>
         <CloseIcon @click="toggleModalState()" class="icon close-icon" />
     </div>

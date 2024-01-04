@@ -206,9 +206,9 @@ trackScroll();
 .room {
   padding-top: var(--header-height);
   .room-title {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: calc(100vw * .75);
     text-align: center;
     h2 {

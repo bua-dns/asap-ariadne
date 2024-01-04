@@ -108,9 +108,13 @@ const contentBlocks = computed(() => {
         color: var(--text-color-inverse);
       }
       h1 {
-        font-weight: 700;
+        font-size: var(--font-size-h1-front);
       }
       h2 {
+        font-size: var(--font-size-h2-front);
+      }
+      h3 {
+        font-size: var(--font-size-h3-front);
       }
     }
   }

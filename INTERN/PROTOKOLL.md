@@ -6,14 +6,14 @@ Neue Live-Version der Ausstellung
 
 ## Stand
 
-Header im Umbau für ein besseres Responsiv-Verhalten
+
 
 ## to do
 
 - nächste Runde Responsive-Anpassungen
-    - Anpassungen Überschriften und Texte (v.a. font-size) systematisieren
     - Ausschalten Lightbox-Funktion bei kleinen Bildschirmen
     - Slider responsive machen
+        - Schließen und Blättern fixed am unteren BS-Rand
 
 ## subtask responsives Modal
 

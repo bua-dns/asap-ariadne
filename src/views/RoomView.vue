@@ -178,7 +178,7 @@ trackScroll();
           </div>
         </div>
       </div>
-      <div class="apparatus">
+      <div class="apparatus" v-if="false">
         <div v-if="mode === 'nav'" class="instructions">
             <p v-if="themeData">{{ hint }}</p>
         </div>
@@ -236,11 +236,11 @@ trackScroll();
     
   }
   .page-nav {
+    padding: 0 0 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - var(--header-height));
     background-color: black;
     color: var(--color-text-inverse);
     .pagination {

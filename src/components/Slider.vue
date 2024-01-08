@@ -79,7 +79,8 @@
     <div class="slider-carousel"
         v-if="carouselMode"
       >
-        <CloseIcon @click="closeSlider()" class="icon close-icon" />
+        <!-- Controlls > 768px -->
+        <CloseIcon @click="closeSlider()" class="close-icon icon " />
         <div class="slider-control back" v-if="sliderIndex !== 0" 
           @click="moveSlides(-1)"
 
@@ -104,57 +105,97 @@
         </template>
       </div>
     </div>
+    <div class="controls-mobile" v-if="carouselMode">
+      <div class="pagination">
+        <div class="slider-control back" v-if="sliderIndex !== 0" 
+          @click="moveSlides(-1)"
+
+        >
+          <img class="icon" src="../assets/arrow_back.svg" alt="" >
+        </div>
+        <div class="slider-control forward" 
+          @click="moveSlides(1)"
+        >
+          <img class="icon" src="../assets/arrow_back.svg" alt="">
+        </div>  
+      </div>
+      <div class="close">
+        <CloseIcon @click="closeSlider()" class="close-icon icon " />
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .slider {
   min-height: calc(100vh - var(--header-height) - calc( 2 * var(--component-gap)));
-  .close-icon {
-    position: absolute;
+  .controls-mobile {
+    position: fixed;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 2px solid var(--color-text);
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    right: 1rem;
-    top: 2rem;
-    background-color: rgba(255,255,255,.1);
-  }
-  .close-icon:hover {
-      background-color: rgba(0,0,0,.25);
-  }
-  .slider-control {
-    position: absolute;
-    top: calc((100vh - var(--header-height)) / 2);
-    transform: translateY(-50%);
-    z-index: 9;
-    width: 4rem;
-    padding: .5rem;
-    background: rgba(200,200,200,.25);
-    border-radius: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    .icon {
-      display: block;
-      width: 3rem;
+
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 4rem;
+    padding: .25rem .25rem;
+    border-top: 2px solid hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 100%);
+    z-index: 10000;
+    .close {
+      padding: 0 .5rem;
+      .close-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--color-text);
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+
+        background-color: rgba(255,255,255,.1);
+      }
+
     }
-    &.forward {
-      right: 1rem;
-      padding-right: 1rem;
-      .icon {
-        transform: rotate(180deg);
+    .pagination {
+      flex: 1;
+      display: flex;
+      padding: 0 3rem;
+      align-items: center;
+      font-size: var(--font-size-small);
+      line-height: var(--line-height-small);
+      color: var(--color-text);
+      .slider-control{
+        width: 2rem;
+        padding: .5rem;
+        background: rgba(200,200,200,.25);
+        border-radius: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .icon {
+          display: block;
+          width: 3rem;
+        }
+        &.forward {
+          margin-left: auto;
+          padding-right: 1rem;
+
+          .icon {
+            transform: rotate(180deg);
+          }
+        }
+        &.back {
+          margin-right: auto;
+          padding-left: 1rem;
+        }
+  
       }
     }
-    &.back {
-      padding-left: 1rem;
-      left: 1rem;
-    }
-
+  }
+  .close-icon, .slider-control {
+    display: none;
   }
   .slider-preview {
     // min-height: calc(100vh - var(--header-height) );
@@ -203,10 +244,95 @@
     color: black;
     z-index: 10000;
     padding: 2rem 6rem;
+    padding-bottom: 2rem;
     .slider-exhibit {
       position: relative;
     }
   }
+  
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    .controls-mobile {
+      display: none;
+    }
+    .close-icon {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--color-text);
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      right: 3rem;
+      top: 2rem;
+      background-color: rgba(255,255,255,.1);
+    }
+    .close-icon:hover {
+        background-color: rgba(0,0,0,.25);
+    }
+    .slider-control {
+      position: absolute;
+      top: calc((100vh - var(--header-height)) / 2);
+      transform: translateY(-50%);
+      z-index: 9;
+      width: 4rem;
+      padding: .5rem;
+      background: rgba(200,200,200,.25);
+      border-radius: .5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      .icon {
+        display: block;
+        width: 3rem;
+      }
+      &.forward {
+        right: 1rem;
+        padding-right: 1rem;
+        .icon {
+          transform: rotate(180deg);
+        }
+      }
+      &.back {
+        padding-left: 1rem;
+        left: 1rem;
+      }
+
+    }
+    .slider-preview {
+
+      &.light {
+      }
+      &.dark {
+      }
+      .slider-preview-header {
+        h3 {
+        }
+      }
+      .slider-preview-body {
+
+        .slider-preview-content {
+        }
+        .slider-preview-image {
+
+          img {
+
+          }
+        }
+      }
+    }
+    .slider-carousel {
+
+      .slider-exhibit {
+      }
+    }
+    
+  }
+  
 }
 
 

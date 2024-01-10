@@ -54,7 +54,19 @@
 
 <template>
   <div class="slider" v-if="data">
-    
+    <!-- Controlls > 768px -->
+    <CloseIcon @click="closeSlider()" class="close-icon icon" v-if="carouselMode"/>
+        <div class="slider-control back" v-if="sliderIndex !== 0 && carouselMode" 
+          @click="moveSlides(-1)"
+
+        >
+          <img class="icon" src="../assets/arrow_back.svg" alt="" >
+        </div>
+        <div class="slider-control forward" v-if="sliderIndex < slider.exhibits.length - 1 && carouselMode" 
+          @click="moveSlides(1)"
+        >
+          <img class="icon" src="../assets/arrow_back.svg" alt="">
+        </div>  
     <div class="slider-preview" v-if="!carouselMode" :class="props.textColorStyle">
       <div class="slider-preview-header">
         <h3>{{ props.sliderContent.title }}</h3>
@@ -79,19 +91,7 @@
     <div class="slider-carousel"
         v-if="carouselMode"
       >
-        <!-- Controlls > 768px -->
-        <CloseIcon @click="closeSlider()" class="close-icon icon " />
-        <div class="slider-control back" v-if="sliderIndex !== 0" 
-          @click="moveSlides(-1)"
-
-        >
-          <img class="icon" src="../assets/arrow_back.svg" alt="" >
-        </div>
-        <div class="slider-control forward" 
-          @click="moveSlides(1)"
-        >
-          <img class="icon" src="../assets/arrow_back.svg" alt="">
-        </div>  
+        
         <div class="slider-exhibit"
           v-for="(exhibit, index) in slider.exhibits"
           :key="`slider-exhibit-${index}`"
@@ -200,6 +200,8 @@
   .slider-preview {
     // min-height: calc(100vh - var(--header-height) );
     height: 100%;
+    max-width: 100%;
+    padding: 0 2rem;
     &.light {
       color: var(--color-text-inverse);
     }
@@ -242,8 +244,8 @@
     right: 0;
     background-color: #fff;
     color: black;
-    z-index: 10000;
-    padding: 2rem 6rem;
+    z-index: 1000;
+    padding: 2rem 2rem;
     padding-bottom: 2rem;
     .slider-exhibit {
       position: relative;
@@ -254,11 +256,12 @@
 
 @media screen and (min-width: 768px) {
   .slider {
+    
     .controls-mobile {
       display: none;
     }
     .close-icon {
-      position: absolute;
+      position: fixed;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -267,17 +270,18 @@
       width: 3rem;
       height: 3rem;
       right: 3rem;
-      top: 2rem;
+      top: calc(var(--header-height) + 2rem);
       background-color: rgba(255,255,255,.1);
+      z-index: 10000;
     }
     .close-icon:hover {
         background-color: rgba(0,0,0,.25);
     }
     .slider-control {
-      position: absolute;
-      top: calc((100vh - var(--header-height)) / 2);
+      position: fixed;
+      top: calc((100vh - var(--header-height)) / 2 + 4rem);
       transform: translateY(-50%);
-      z-index: 9;
+      z-index: 10000;
       width: 4rem;
       padding: .5rem;
       background: rgba(200,200,200,.25);
@@ -291,7 +295,7 @@
         width: 3rem;
       }
       &.forward {
-        right: 1rem;
+        right: 1.5rem;
         padding-right: 1rem;
         .icon {
           transform: rotate(180deg);
@@ -299,7 +303,7 @@
       }
       &.back {
         padding-left: 1rem;
-        left: 1rem;
+        left: 1.5rem;
       }
 
     }

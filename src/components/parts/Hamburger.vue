@@ -24,7 +24,7 @@ const { toggleState } = store;
     position: relative;
     margin-left: auto;
     width: 3rem;
-    height: 4rem;
+    height: 2.5rem;
     .hamburger {
         position: absolute;
         top:50%;

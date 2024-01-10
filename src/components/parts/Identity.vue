@@ -19,6 +19,7 @@ import { computed } from 'vue';
     .logo {
         display: block;
         width: var(--header-lateral-elements-width);
+        padding: .5rem 0;
     }
 }
 // RESPONSIVITY

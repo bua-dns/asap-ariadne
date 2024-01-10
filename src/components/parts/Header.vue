@@ -66,9 +66,9 @@ const { closeMobileNav } = store;
           text-decoration: none;
           h1 {
             font-size: 1rem;
-            margin: 0 0 .25rem 0;
+            margin: 0;
             font-weight: 700;
-            padding: 1rem;
+            padding: .25rem  1.25rem .25rem .25rem;
           }
         }      
       }

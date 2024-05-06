@@ -52,6 +52,11 @@
 <template>
     <nav v-if="true">
         <div class="clickable mobile-nav">
+            <div class="home-icon">
+                <router-link to="/">
+                    <img src="@/assets/icons/home.svg" alt="Hamburger">
+                </router-link>
+            </div>
             <Hamburger />
         </div>
         <Transition >
@@ -122,8 +127,19 @@ h1,h2,h3,h4 {
     padding-right: 1rem;
     .mobile-nav {
         margin-left: auto;
-        // height: var(--header-height);
-        // width: var(--header-height);
+        display: flex;
+        gap: .75rem;
+        .home-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                display: block;
+                height: 2.125rem;
+            }
+        }
+
+
     }
     .fly-out {
         position: fixed;

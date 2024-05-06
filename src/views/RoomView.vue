@@ -178,7 +178,7 @@ trackScroll();
           </div>
         </div>
       </div>
-      <div class="apparatus" v-if="false">
+      <div class="apparatus" v-if="true">
         <div v-if="mode === 'nav'" class="instructions">
             <p v-if="themeData">{{ hint }}</p>
         </div>
@@ -186,9 +186,17 @@ trackScroll();
             <RouterLink to="/#ariadne">Startseite</RouterLink>
         </div>
         <div class="apparatus-links">
-            <router-link to="/page/impressum">Impressum</router-link> |
-            <router-link to="/page/datenschutz">Datenschutz</router-link>
-        </div>
+            <a 
+              href="https://abguss-sammlung-berlin.de/kontakt/" 
+              alt="Impressum und Kontakt"
+              target="_blank"
+            >Impressum</a> |
+            <a 
+              href="https://abguss-sammlung-berlin.de/datenschutzhinweise/"
+              alt="Datenschutzhinweise"
+              target="_blank"
+            >Datenschutzhinweise</a>
+          </div>
       </div>
     </div>
   </div>

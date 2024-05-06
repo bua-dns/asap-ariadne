@@ -76,8 +76,16 @@ const contentBlocks = computed(() => {
               <p v-if="themeData">{{ hint }}</p>
           </div>
           <div class="apparatus-links">
-              <RouterLink to="/page/impressum">Impressum</RouterLink> |
-              <RouterLink to="/page/datenschutz">Datenschutz</RouterLink>
+            <a 
+              href="https://abguss-sammlung-berlin.de/kontakt/" 
+              alt="Impressum und Kontakt"
+              target="_blank"
+            >Impressum</a> |
+            <a 
+              href="https://abguss-sammlung-berlin.de/datenschutzhinweise/"
+              alt="Datenschutzhinweise"
+              target="_blank"
+            >Datenschutzhinweise</a>
           </div>
         </div>
         </div>

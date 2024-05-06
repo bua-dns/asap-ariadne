@@ -42,17 +42,23 @@ const toggleModalState = () => {
       <div class="credits" v-html="props.data.credits" />
     </div>
   </div>
-  <div class="modal"
-        :class="{ 'show': modalState }"
-        @wheel.prevent
-        @touchmove.prevent
-        @scroll.prevent
-    >
-        <div class="modal-backdrop" @click.self="toggleModalState()">
-          <ModalContent :data="data"/>
-        </div>
-        <CloseIcon @click="toggleModalState()" class="icon close-icon" />
+  <!-- <div class="representation" @click="toggleModalState()" :class="`context-${props.context}`">
+    <img :src="useGetDerivate(props.data.representation.url,800,800)" ref="el">
+    <div class="caption" :class="textColorStyle">
+      <div class="credits" v-html="props.data.credits" />
     </div>
+  </div>
+  <div class="modal"
+      :class="{ 'show': modalState }"
+      @wheel.prevent
+      @touchmove.prevent
+      @scroll.prevent
+  >
+      <div class="modal-backdrop" @click.self="toggleModalState()">
+        <ModalContent :data="data"/>
+      </div>
+      <CloseIcon @click="toggleModalState()" class="icon close-icon" />
+  </div> -->
 </template>
 
 <style lang="scss">

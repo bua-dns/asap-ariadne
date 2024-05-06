@@ -13,18 +13,20 @@ const props = defineProps({
         <div class="image-frame">
             <img :src="data.representation.url">
         </div>
-        <div class="caption" v-if="data.caption" v-html="data.caption" />
-        <div class="credits" v-if="data.credits" v-html="data.credits" />
+        <div class="info">
+            <div class="caption" v-if="data.caption" v-html="data.caption" />
+            <div class="credits" v-if="data.credits" v-html="data.credits" />
+        </div>
         <pre v-if="false">{{ data  }}</pre>
     </div>
 </template>
 
 <style lang="scss">
 .modal-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     a {
         color: inherit;
         text-decoration: none;
@@ -33,7 +35,7 @@ const props = defineProps({
         }
     }
     .image-frame {
-        max-height: 85vh;
+        max-height: 75vh;
         max-width: 85vw;
         display: flex;
         justify-content: center;
@@ -44,10 +46,21 @@ const props = defineProps({
             max-height: 85vh;
         }  
     }
-    .credits {
-        margin-top: 1rem;
-        font-size: .8rem;
-        text-align: center;
-    }   
+    .info {
+        .caption {
+            margin-top: .5rem;
+            font-size: .9rem;
+            text-align: center;
+            line-height: 1.35;
+            p {
+                margin: 0;
+            }
+        }
+        .credits {
+            margin-top: .25rem;
+            font-size: .75rem;
+            text-align: center;
+        }   
+    }
 }
 </style>

@@ -3,6 +3,7 @@
   import { computed } from 'vue';
   import { useFetchObject } from '@/composables/useFetchObject';
   import Representation from '@/components/parts/Representation.vue';
+  import ImageViewer from '@/components/parts/ImageViewer.vue';
   
   const props = defineProps({
     exhibitContent: Object,
@@ -29,7 +30,17 @@
           <div v-html="exhibitContent.text" />
         </div>
         <template v-if="object.representation.url">
+          <div style="max-width: 40rem;" v-if="false"><pre >{{ object }}</pre></div>
           <div class="medium">
+              <ImageViewer
+                :image="object.representation.url"
+                :textColorStyle="textColorStyle"
+                :context="context"
+                :credits="object.credits"
+                :caption="object.caption"
+              />
+          </div>
+          <div class="medium" v-if="false">
               <Representation
                 :data="object"
                 :textColorStyle="textColorStyle"

@@ -158,6 +158,7 @@
         max-height: calc(100vh - var(--header-height));
         overflow-y: scroll;
         display: block;
+        z-index: 10;
         .navi-upper {
             display: block;
             .fly-out-nav {

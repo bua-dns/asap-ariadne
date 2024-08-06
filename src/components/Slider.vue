@@ -141,7 +141,7 @@
     padding: .25rem .25rem;
     border-top: 2px solid hsl(0, 0%, 90%);
     background-color: hsl(0, 0%, 100%);
-    z-index: 10000;
+    z-index: 9;
     .close {
       padding: 0 .5rem;
       .close-icon {
@@ -244,7 +244,7 @@
     right: 0;
     background-color: #fff;
     color: black;
-    z-index: 1000;
+    z-index: 8;
     padding: 2rem 2rem;
     padding-bottom: 2rem;
     .slider-exhibit {
@@ -272,7 +272,7 @@
       right: 3rem;
       top: calc(var(--header-height) + 2rem);
       background-color: rgba(255,255,255,.1);
-      z-index: 10000;
+      z-index: 9;
     }
     .close-icon:hover {
         background-color: rgba(0,0,0,.25);
@@ -281,7 +281,7 @@
       position: fixed;
       top: calc((100vh - var(--header-height)) / 2 + 4rem);
       transform: translateY(-50%);
-      z-index: 10000;
+      z-index: 9;
       width: 4rem;
       padding: .5rem;
       background: rgba(200,200,200,.25);

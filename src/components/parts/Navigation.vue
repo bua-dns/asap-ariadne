@@ -120,10 +120,13 @@
     </nav>
 </template>
 
-<style lang="scss" scoped>
-h1,h2,h3,h4 {
+<style lang="scss" >
+.mobile-nav {
+   h1,h2,h3,h4 {
     font-family: 'M PLUS 2', sans-serif;
+} 
 }
+
  nav {
     width: 4rem;
     display: flex;
@@ -185,6 +188,17 @@ h1,h2,h3,h4 {
                 padding: 2rem;
                 & > div {
                     margin-bottom: 1.5rem;
+                }
+                p {
+                    margin-bottom: .5rem;
+                }
+                font-size: 1rem;
+                .bibliography-info, .contact-info {
+                    h3 {
+                        font-size: 1.25rem;
+                        margin-bottom: .5rem;
+                    }
+                    font-size: .75rem;
                 }
                 .apparatus-text {
                     

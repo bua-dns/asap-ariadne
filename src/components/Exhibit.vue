@@ -50,7 +50,11 @@
         </template>
         <template v-if="object.video.url">
           <div>
-            <video class="video-player" controls preload="auto" >
+            <video 
+              class="video-player" 
+              controls preload="auto" 
+              :poster="object.video_cover?.url"
+              >
               <source :src="object.video.url" type='video/mp4'>
               <p class="vjs-no-js">
                 To view this video please enable JavaScript, and consider upgrading to a web browser that

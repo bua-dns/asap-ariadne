@@ -1,0 +1,619 @@
+# This file defines the contenttypes on the website. See the documentation for
+# details: https://docs.bolt.cm/contenttypes/intro
+
+# The Homepage contenttype is a singleton: There can be only one record of this
+# contenttype.
+
+homepage:
+    name: Homepage
+    singular_name: Homepage
+    fields:
+        title:
+            label: Titel der Ausstellung
+            type: html
+            height: 32px
+            group: content       
+        image:
+            type: image
+            placeholder: https://source.unsplash.com/1920x640/?cityscape,landscape,nature/__random__
+        teaser:
+            type: html
+            height: 150px
+        content:
+            type: html
+            height: 300px
+        contentlink:
+            type: text
+            label: Link
+            placeholder: 'contenttype/slug or http://example.org/'
+            postfix: "Use this to add a link for this Homepage. This could either be an 'internal' link like <tt>page//about</tt>, if you use a contenttype/slug combination. Otherwise use a proper URL, like `http://example.org`."
+        slug:
+            group: meta
+            type: slug
+            uses: title
+        contentblocks:
+            group: Inhaltselemente
+            type: block
+            label: Inhaltselement
+            fields:
+                imagesection:
+                    label: Bild mit Legende
+                    fields:
+                        image:
+                            type: image
+                        caption:
+                            label: Bildunterschrift
+                            type: html
+                            height: 40px
+                textsection:
+                    label: Textblock
+                    fields:
+                        heading:
+                            label: Überschrift
+                            type: text
+                        content:
+                            label: Text
+                            type: html
+                            height: 150px
+                textwithimagesection:
+                    label: Text-Bild-Kombination
+                    fields:
+                        heading:
+                            label: Überschrift
+                            type: text
+                        content:
+                            label: Text
+                            type: html
+                            height: 150px
+                        image:
+                            label: Abbildung
+                            type: image
+                        caption:
+                            label: Bildunterschrift
+                            type: html
+                            height: 40px                 
+    viewless: true
+    singleton: true
+    default_status: published
+    icon_many: "fa:home"
+    icon_one: "fa:home"
+
+theme_content:
+    name: Theme-Elemente
+    singular_name: Theme-Elemente
+    fields:
+        navi_hint:
+                group: navigation
+                type: text
+                class: large
+                label: Erläuterung Navigation über Image-Map
+        navi_items:
+            label: Menüpunkte Hauptnavigation
+            type: repeater
+            icon: fa:repeat
+            fields:
+                text:
+                    type: text
+                    label: Beschriftung
+                    class: large
+                link:
+                    type: text
+                    label: Link (relativ)
+                    class: large
+    singleton: true 
+    default_status: published
+
+
+footer:
+    name: Footer-Content
+    singular_name: Footer-Content
+    fields:
+        title:
+            group: info
+            type: text
+        slug:
+            label: slug
+            type: slug
+            uses: title
+            postfix: Dieser Titel wird  nicht ausgegeben
+        contentblocks:
+            group: Spalten
+            type: block
+            label: Footer-Spalte
+            fields:
+                imagesection:
+                    label: Logo
+                    fields:
+                        image:
+                            type: image
+                            label: Logo
+                        link:
+                            type: text
+                            label: Verlinkung für das Logo
+                textsection:
+                    label: Textblock
+                    fields:
+                        heading:
+                            label: Überschrift
+                            type: text
+                        content:
+                            label: Text
+                            type: html
+                            height: 150px
+    viewless: true
+    singleton: true
+    default_status: published
+
+
+objects:
+    name: Objekte
+    singular_name: Objekt
+    fields:
+        title:
+            group: Info
+            label: Titel
+            type: text
+            class: large
+        slug:
+            type: slug
+            uses: [ title ]
+        dump:
+            label: Dump-Datei aus Arachne
+            type: file
+            upload: xml-dumps
+        arachne_id:
+            label: Kennnummer bei Arachne
+            type: text
+        object_id:
+            group: Metadaten
+            label: Inventar-Nr.
+            type: text
+        collection:
+            label: Sammlung
+            type: text
+        comment: 
+            group: Kuratorische Inhalte
+            label: Objektkommentar
+            type: html
+            height: 240px;
+        representation:
+            group: Medien
+            label: Digitalisat
+            type: file
+            upload: /representations
+        video:
+            label: Video
+            type: file
+            upload: /videos
+        caption:
+            label: Bildunterschrift
+            type: html
+            height: 60px;
+        credits:
+            label: Rechtehinweis
+            type: html
+            height: 45px
+        more_representations:
+            type: block
+            label: Weitere Digitalisate
+            fields:
+                imagesection:
+                    label: Digitalisat
+                    fields:
+                        representation:
+                            label: Digitalisat
+                            type: file
+                            upload: /representations
+                        caption:
+                            label: Bildunterschrift
+                            type: html
+                            height: 60px;
+                        credits:
+                            label: Rechtehinweis
+                            type: html
+                            height: 45px
+    recordsperpage: 200
+
+rooms:
+    name: Räume
+    singular_name: Raum
+    fields:
+        title:
+            group: info
+            label: Titel
+            type: text
+        position:
+            label: Ordnungsnummer
+            type: integer
+        slug:
+            type: slug
+            uses: [ title ]
+        claim:
+            label: Teaser-Zeile
+            type: html
+            height: 200px
+        intro:
+            group: Inhalte
+            label: Einleitung
+            type: html
+            height: 400px
+        representation:
+            group: Medien
+            label: Digitalisat
+            type: file
+            upload: /representations
+        exhibits:
+            group: Exponate
+            label: Exponate
+            type: repeater
+            icon: fa:repeat
+            fields:
+                object:
+                    type: select
+                    label: Objekt
+                    values: objects/id,title
+                    autocomplete: true
+                    sort: title
+                slider:
+                    type: select
+                    label: Slider
+                    values: slider/id,title
+                    autocomplete: true
+                    sort: title
+                position:
+                    type: integer
+                    label: Position
+                title:
+                    label: Titel des Exponats
+                    type: text
+                short_text:
+                    label: Kurztext
+                    type: html
+                    height: 150px
+                text:
+                    label: Text
+                    type: html
+                    height: 300px
+    recordsperpage: 200
+Slider:
+    name: Slider
+    singular_name: slider
+    fields:
+        title:
+            group: info
+            label: Titel
+            type: text
+        introText:
+            label: Intro-Text zum Slider
+            type: html
+            height: 150px
+        position:
+            label: Ordnungsnummer
+            type: integer
+        slug:
+            type: slug
+            uses: [ title ]
+        representation:
+            group: Medien
+            label: Digitalisat
+            type: file
+            upload: /representations
+        exhibits:
+            group: Exponate
+            label: Exponate
+            type: repeater
+            icon: fa:repeat
+            fields:
+                object:
+                    type: select
+                    label: Objekt
+                    values: objects/id,title
+                    autocomplete: true
+                    sort: title
+                position:
+                    type: integer
+                    label: Position
+                title:
+                    label: Titel
+                    type: text
+                short_text:
+                    label: Kurztext
+                    type: html
+                    height: 150px
+                text:
+                    label: Text
+                    type: html
+                    height: 300px
+    recordsperpage: 200
+    
+locations:
+    name: Orte
+    singular_name: Orte
+    fields:
+        label:
+            group: Info
+            label: Bezeichnung
+            type: text
+            class: large
+        slug:
+            type: slug
+            uses: [ label ]
+        select_object:
+            label: Objektbezug
+            type: select
+            values: objects/title
+            postfix: Objekt auswählen
+            autocomplete: true
+            sort: title
+        wd_id:
+            label: Q-Nummer des Ortes bei Wikidata
+            type: text
+    recordsperpage: 200
+
+
+# Pages can be used for the more 'static' pages on your site. This content-type
+# has a 'templateselect' field, which allows you to override the record_template
+# setting for an individual page.
+# The taxonomy for this ContentType is defined as 'groups', which is a so-called
+# "grouping taxonomy". This way you can easily group sets of pages that logically
+# belong together. If your site has a 'services' section, in which you'd like to
+# list the different types of services a company provides, you can group these
+# together.
+
+pages:
+    name: Seiten
+    singular_name: Seite
+    fields:
+        title:
+            type: text
+            class: large
+            label: Titel
+            group: content
+        slug:
+            type: slug
+            uses: title
+        body:
+            type: html
+            height: 300px
+            label: Text
+    recordsperpage: 20
+
+
+# Entries can be used for things like 'news' or 'blogpostings'. They have a
+# 'teaser', which can be used for a short blurb on listing-pages, allowing
+# visitors to click-through to the rest of the entry. It also has fields for an
+# image and an optional video.
+# A relation is defined to the pages ContentType. This way you can refer to a
+# page from your news-item.
+# This ContentType defines 'categories' and 'tags' as taxonomies, allowing the
+# editor to use both to categorize a specific entry.
+# The 'sort' is set to '-datepublish', which means that newer entries will be
+# shown above older entries.
+
+
+
+# The 'Showcases' is not particularly useful in most cases, but it does a good
+# job of showcasing most of the available fieldtypes. Feel free to delete it, or
+# copy some fields to your own ContentTypes.
+# Since no templates are defined for this ContentType, the default record_template,
+# listing_template, and related settings are used from config.yml
+
+# showcases:
+#     name: Showcases
+#     slug: showcases
+#     singular_name: Showcase
+#     singular_slug: showcase
+#     fields:
+#         title:
+#             type: text
+#             class: large
+#             required: true
+#             pattern: ".{2,255}" # see: http://html5pattern.com/
+#             error: "The Title field is required, and must contain at least 2 characters"
+#             group: Text
+#         slug:
+#             type: slug
+#             uses: [ title ]
+#         html:
+#             type: html
+#             height: 150px
+#         textarea:
+#             type: textarea
+#             postfix: "<p><em>This is a plain text area. the contents will not be processed.</em></p>"
+#         markdown:
+#             type: markdown
+#             postfix: "<p><em>This field gets parsed as <a href='https://help.github.com/articles/markdown-basics'>Markdown</a>, when rendered on the site.</em></p>"
+#         geolocation:
+#             type: geolocation
+#             group: Media
+#         embed:
+#             type: embed
+#         video:
+#             type: video
+#         image:
+#             type: image
+#             attrib: title # Note: retrieve this in your template with {{ record.values.image.title }}
+#             extensions: [ gif, jpg, png ]
+#             placeholder: https://source.unsplash.com/1280x768/?animal,koala,kitten,puppy,cute/__random__
+#         imagelist:
+#             type: imagelist
+#         file:
+#             type: file
+#             group: files
+#         filelist:
+#             type: filelist
+#         checkbox:
+#             type: checkbox
+#             label: "This is a checkbox"
+#             group: other
+#         datetime:
+#             type: datetime
+#             default: "2000-01-01"
+#             variant: inline
+#         date:
+#             type: date
+#             default: "first day of last month"
+#             variant: inline
+#         integerfield:
+#             type: integer
+#             index: true
+#         floatfield:
+#             type: float
+#         selectfield:
+#             type: select
+#             values: [ foo, bar, baz ]
+#         multiselect:
+#             type: select
+#             values: [ A-tuin, Donatello, Rafael, Leonardo, Michelangelo, Koopa, Squirtle ]
+#             multiple: true
+#             postfix: "Select your favourite turtle(s)."
+#         selectentry:
+#             type: select
+#             values: entries/id,title
+#             postfix: "Select an entry"
+#             autocomplete: true
+#             sort: title
+#         repeater:
+#             type: repeater
+#             group: repeater
+#             label: Simple repeater example
+#             icon: fa:repeat
+#             limit: 3
+#             prefix: "<p>This allows you to create multiple sets of fields. Use the add button at the bottom to create a new empty set.</p>"
+#             fields:
+#                 repeattitle:
+#                     type: text
+#                 repeatimage:
+#                     type: image
+#                     extensions: [ gif, jpg, png ]
+#                 repeatcontent:
+#                     type: html
+#     relations:
+#         entries:
+#             multiple: false
+#             label: "Choose an entry"
+#             order: -id
+#             format: "{{ item.title|escape }} (№ {{ item.id }})"
+#             postfix: "By selecting an Entry, you're creating a bi-directional relationship to that Entry."
+#         pages:
+#             multiple: true
+#             order: title
+#             label: Select zero or more pages
+#     taxonomy: [ categories, tags ]
+#     show_on_dashboard: true
+#     default_status: published
+#     searchable: true
+#     icon_many: "fa:gift"
+#     icon_one: "fa:gift"
+
+
+# The 'Blocks' ContentType is a so-called 'resource ContentType'. This means
+# that it can be used to manage smaller pieces of content, like the 'about us'
+# text, an 'our address' in the footer, or similar short blurbs of text.
+# For more info, see: https://docs.bolt.cm/howto/resource-contenttype
+
+# blocks:
+#     name: Blocks
+#     singular_name: Block
+#     fields:
+#         title:
+#             type: text
+#             class: large
+#             group: "Block"
+#         slug:
+#             type: slug
+#             uses: [ title ]
+#         content:
+#             type: html
+#             height: 150px
+#         contentlink:
+#             type: text
+#             label: Link
+#             placeholder: 'contenttype/slug or http://example.org/'
+#             postfix: "Use this to add a link for this Block. This could either be an 'internal' link like <tt>page/about</tt>, if you use a contenttype/slug combination. Otherwise use a proper URL, like `http://example.org`."
+#         image:
+#             type: image
+#             attrib: title
+#             extensions: [ gif, jpg, png ]
+#     show_on_dashboard: true
+#     viewless: true
+#     default_status: published
+#     searchable: false
+#     icon_many: "fa:cubes"
+#     icon_one: "fa:cube"
+
+# Possible field types:
+#
+# text - varchar(256) - input type text.
+# integer - integer - Input field for integer numbers.
+# float - double - Input field for floating numbers, stored as 'Double'.
+# geolocation - text (65kb) - Input field for geolocation. Enter an address, and the location is geocoded to latitude/longitude coordinates
+# imagelist - text (65kb) - Input type for imagelists. Add multiple images with a description. Useful for image sliders, galleries, etcetera.
+# image - varchar(256) - image select/upload widget, stored as filename.
+# file - varchar(256) - file select/upload widget, stored as filename.
+# filelist - text (65kb) - Input type for a list of files. Including a description.
+# video - varchar(256) - Video embed widget, stored as filename.
+# html - text (65kb) - wysiwyg element.
+# textarea - varchar(32768) - Simple, plain < textarea > field.
+# markdown - varchar(32768) - Simple, plain < textarea > field, which is parsed as Markdown text.
+# datetime - datetime - date and time selector widget.
+# date - datetime - date selector widget.
+# select - varchar(256) - select with predefined values
+# templateselect - varchar(256) - select with template filenames
+# checkbox - integer - checkbox-field which is 1 (checked) or 0 (unchecked)
+
+# Using YAML repeated nodes
+#
+# YAML allows the defining of "repeated nodes". These allow you to define a 'node'
+# with a 'key: &name' and referenced later with '<<: *name'
+#
+# Bolt allows you to define this with the special entry of '__nodes:' that itself
+# won't create a ContentType, but will allow you to use it in actual ContentTypes
+# to prevent repeating yourself.
+#
+# To achieve this, first create a key '__nodes:'
+#__nodes:
+#    field_defaults: &field_defaults
+#        title:
+#            type: text
+#            class: large
+#            group: main
+#        slug:
+#            type: slug
+#            uses: title
+#    template_defaults: &template_defaults
+#        template:
+#            type: templateselect
+#            filter: '*.twig'
+#            group: meta
+#
+# Then, as an example, you could create a ContentType with default fields, with
+# an additional 'image' field.
+#
+#contenttype_abc:
+#    name: ContentType Abc
+#    fields:
+#        <<: *field_defaults
+#        image:
+#            type: image
+#            attrib: title
+#            extensions: [ gif, jpg, png ]
+#        <<: *template_defaults
+#    taxonomy: [ chapters ]
+#    recordsperpage: 10
+#
+# Alternatively, or additionally, you then can then create a ContentType with
+# default fields, and a 'select' field, and a different 'templateselect' option.
+#
+#contenttype_xyz:
+#    name: ContentType Xyz
+#    fields:
+#        <<: *field_defaults
+#        selectfield:
+#            type: select
+#            values: [ none, foo, bar ]
+#        template:
+#            type: templateselect
+#            filter: '*_xyz.twig'
+#    taxonomy: [ tags ]
+#    recordsperpage: 20

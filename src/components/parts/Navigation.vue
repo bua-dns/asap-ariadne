@@ -93,20 +93,25 @@
                                 v-html="footer.contentblocks[0].content"
                             />
                         </div>
-                        <div class="contact-info">
+                        <div class="bibliography-info">
                             <h3>{{ footer.contentblocks[1].heading }}</h3>
                             <div 
                                 v-html="footer.contentblocks[1].content"
+                            />
+                        </div>
+                        <div class="contact-info">
+                            <h3>{{ footer.contentblocks[2].heading }}</h3>
+                            <div 
+                                v-html="footer.contentblocks[2].content"
                             />
                         </div>
                         
                     </div>
                 </div>
                 <div class="navi-footer">
-                    <div class="logos">
-                            <!-- {{ footer.contentblocks[2] }} -->
-                            <a :href="footer.contentblocks[2].link" target="_blank">
-                                <img :src="useGetDerivate(footer.contentblocks[2].image.url, 240,240)" alt="">
+                    <div class="logos" v-if="true">
+                            <a :href="footer.contentblocks[3].link" target="_blank">
+                                <img :src="useGetDerivate(footer.contentblocks[3].image.url, 240,240)" alt="">
                             </a>
                     </div>
                 </div>

@@ -10,27 +10,27 @@ const props = defineProps({
 <template>
     <div class="block-element">
         <div class="dev-out" v-if="false">{{ blockContent.caption }}</div>
-        <template v-if="props.blockContent._block === 'textsection'">
+        <template v-if="blockContent._block === 'textsection'">
             <div class="text-section">
-                <div class="content" v-html="props.blockContent.content" />
+                <div class="content" v-html="blockContent.content" />
             </div>
         </template>
-        <template v-if="props.blockContent._block === 'textwithimagesection'">
+        <template v-if="blockContent._block === 'textwithimagesection'">
             <div class="block-container">
                 <div class="block-image-container">
                     <div class="block-image">
-                        <img :src="useGetDerivate(props.blockContent.image.url, '800', '800')" alt="">
+                        <img :src="useGetDerivate(blockContent.image.url, '800', '800')" alt="">
                         <div class="caption" v-if="blockContent.caption" v-html="blockContent.caption" />
                     </div>
                 </div>
                 <div class="block-text">
-                    <div class="content" v-html="props.blockContent.content" />
+                    <div class="content" v-html="blockContent.content" />
                 </div>
             </div>
         </template>
-        <template v-if="props.blockContent._block === 'imagesection'">
+        <template v-if="blockContent._block === 'imagesection'">
             <div class="block-image">
-                <img :src="props.blockContent.image.url" alt=""> 
+                <img :src="blockContent.image.url" alt=""> 
                 <div class="caption" v-if="blockContent.caption" v-html="blockContent.caption" />
             </div>
         </template>     

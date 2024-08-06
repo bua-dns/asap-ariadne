@@ -69,6 +69,7 @@ const { closeMobileNav } = store;
             margin: 0;
             font-weight: 700;
             padding: .25rem  1.25rem .25rem .25rem;
+            color: var(--color-wool-red);
           }
         }      
       }
@@ -114,10 +115,12 @@ const { closeMobileNav } = store;
             font-size: 1.75rem;
             margin: 0 0 .25rem 0;
             font-weight: 700;
+            color: var(--color-wool-red);
           }
           h2 {
             font-size: 1.5rem;
             margin: 0;
+            color: var(--color-wool-red);
           }
         }      
       }

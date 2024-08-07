@@ -200,7 +200,7 @@ trackScroll();
         </div>
         <div class="apparatus-links">
             <a 
-              href="https://abguss-sammlung-berlin.de/kontakt/" 
+              href="https://abguss-sammlung-berlin.de/impr/" 
               alt="Impressum und Kontakt"
               target="_blank"
             >Impressum</a> |

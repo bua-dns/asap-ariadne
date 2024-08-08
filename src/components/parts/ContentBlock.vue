@@ -42,7 +42,7 @@ const props = defineProps({
 <style lang="scss">
 .block-element {
     margin: 0 auto;
-    max-width: var(--content-width);
+    max-width: var(--block-element-width);
     min-height: calc(100vh - 96px);
     display: flex;
     align-items: center;
@@ -56,7 +56,6 @@ const props = defineProps({
     }
     .block-container {
         display: block;
-
         padding: 1rem;
         .block-image-container {
             display: flex;
@@ -66,8 +65,9 @@ const props = defineProps({
             .block-image {
                 img {
                     display: block;
+                    margin: 0 auto;
                     max-width: 100%;
-                    max-height: calc(100vh - 320px);
+                    max-height: min(540px, calc(100vh - var(--header-height) - 2rem));
                 }
                 .caption {
                     font-size: var(--font-size-extra-small);
@@ -97,7 +97,7 @@ const props = defineProps({
         .block-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 5rem;
+            gap: 3rem;
             padding: 2rem;
         }
     }

@@ -29,7 +29,6 @@
           <div v-html="exhibitContent.text" />
         </div>
         <template v-if="object.representation.url">
-          <div style="max-width: 40rem;" v-if="false"><pre >{{ object }}</pre></div>
           <div class="medium">
               <ImageViewer
                 :image="object.representation.url"
@@ -89,6 +88,11 @@
         line-height: var(--line-height-normal);
         &>div {
           flex: 1;
+        }
+        .exhibit-content {
+          
+        }
+        .medium {
         }
         .video-player {
           max-width: 100%;

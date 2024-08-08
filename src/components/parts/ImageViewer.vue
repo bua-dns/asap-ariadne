@@ -66,6 +66,7 @@ onMounted(() => {
         }
       }
       .caption {
+        text-align: center;
         &.light {
               color: var(--color-text-inverse);
             }
@@ -74,8 +75,7 @@ onMounted(() => {
             }
         .credits {
           margin-top: .5rem;
-          text-align: right;
-          font-size: var(--font-size-small);
+          font-size: var(--font-size-extra-small);
           opacity: .75;
           cursor: default;
         }

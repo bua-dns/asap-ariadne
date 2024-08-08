@@ -209,6 +209,7 @@ trackScroll();
 <style lang="scss">
 .room {
   .room-title {
+    min-height: calc(100vh - var(--header-height));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,6 +253,7 @@ trackScroll();
         
       }
       .textual-nav {
+        font-size: var(--font-size-small);
         margin-top: 4rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -302,6 +304,7 @@ trackScroll();
     }
     .apparatus {
       margin: 4rem 0;
+      font-size: var(--font-size-small);
       .apparatus-links {
         display: flex;
         justify-content: center;
@@ -314,23 +317,4 @@ trackScroll();
   }
 }
 
-
-@media (min-width: 1024px) {
-  .room {
-    .room-title {
-      min-height: calc(100vh - var(--header-height));
-    }
-  }
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-
-.output {
-  position: fixed;
-  top: 20rem;
-  right: 4rem;
-}
 </style>

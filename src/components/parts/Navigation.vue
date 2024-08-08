@@ -171,7 +171,10 @@
                     
                     }
                 .mobile-nav-rooms {
-                    padding-left: 2rem; 
+                    font-size: var(--font-size-normal);
+                    @media screen and (min-width: 480px) {
+                        padding-left: 2rem; 
+                    }
                 }
                 ul {
                     list-style-type: none;
@@ -179,7 +182,11 @@
                     margin: 0;
                     li {
                         display: block;
-                        padding: .5rem;
+                        padding: 0;
+                        @media screen and (min-width: 480px) {
+                            padding: .5rem;
+                        }
+                        padding: .25rem;
                         &:hover {
                             background-color: #fff;
                         }
@@ -197,31 +204,31 @@
                 p {
                     margin-bottom: .5rem;
                 }
-                font-size: 1rem;
+                font-size: var(--font-size-normal);
+
                 .bibliography-info, .contact-info {
                     h3 {
-                        font-size: 1.25rem;
+                        font-size: var(--font-size-normal);
                         margin-bottom: .5rem;
                     }
-                    font-size: .75rem;
+                    font-size: var(--font-size-small);
                 }
-                .apparatus-text {
-                    
-                }
-
             }
         }
         .navi-footer {
-            min-height: 200px;
-            padding: 2rem;
+            min-height: 150px;
+            padding: 1rem;
             .logos {
-                    a {
+                a {
+                    display: block;
+                    img {
                         display: block;
-                        img {
-                            display: block;
+                        margin: 0 auto;
+                        @media screen and (min-width: 768px) {
                             margin-left: auto;
                         }
                     }
+                }
                 }
         }
     }

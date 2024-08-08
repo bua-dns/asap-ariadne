@@ -108,10 +108,6 @@ trackScroll();
     <template v-if="error">{{ error }}</template>
     <template v-if="isFetching">Fetching ...</template>
     <template v-if="data">
-      <div class="output" v-if="false">
-        {{ currentBackgroundLightness }}<br>
-        {{ fadeOutRatio }}
-      </div>
       <div class="room-title" :class="textColorStyle">
         <h2 :class="textColorStyle">{{ roomData.title }}</h2>
       </div>
@@ -211,21 +207,11 @@ trackScroll();
 </template>
 
 <style lang="scss">
-.output {
-  position: fixed;
-  top: 300px;
-  right: 0;
-  background-color: sandybrown;
-  z-index: 1000;
-}
-
 .room {
-  padding-top: var(--header-height);
   .room-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vw * .75);
     text-align: center;
     h2 {
       &.light {

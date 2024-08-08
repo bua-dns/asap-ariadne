@@ -31,7 +31,8 @@ const { closeMobileNav } = store;
         </div>
         <div class="exhibition-title">
           <RouterLink to="/" @click="closeMobileNav()">
-            <h1>Eine Schlafende Ariadne in Berlin - Sieben Fragen und ein roter Faden</h1>
+            <h1>Eine Schlafende Ariadne in Berlin</h1>
+            <h2>Sieben Fragen und ein roter Faden</h2>
           </RouterLink>
         </div>
       </div>
@@ -55,7 +56,7 @@ const { closeMobileNav } = store;
   .small {
     .upper {
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       align-items: center;
       padding: 0 .5rem;
     }
@@ -67,9 +68,17 @@ const { closeMobileNav } = store;
           h1 {
             font-size: 1rem;
             margin: 0;
-            font-weight: 700;
-            padding: .25rem  1.25rem .25rem .25rem;
             color: var(--color-wool-red);
+            @media screen and (min-width: 480px) {
+              font-size: 1.25rem;
+            }
+          }
+          h2 {
+            font-size: .75rem;
+            color: var(--color-wool-red);
+            @media screen and (min-width: 480px) {
+              font-size: 1.125rem;
+            }
           }
         }      
       }
@@ -104,6 +113,7 @@ const { closeMobileNav } = store;
       display: flex;
       justify-content: space-between;
       .exhibition-title {
+        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;

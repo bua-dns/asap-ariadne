@@ -57,7 +57,10 @@
                     <img src="@/assets/icons/home.svg" alt="Hamburger">
                 </router-link>
             </div>
-            <Hamburger />
+            <div class="hamburger">
+                <Hamburger />
+            </div>
+            
         </div>
         <Transition >
             <div class="fly-out" v-if="state === 'extended'">
@@ -128,11 +131,12 @@
 }
 
  nav {
-    width: 4rem;
+    width: 6rem;
     display: flex;
     align-items: center;
     font-size: 1.125rem;
     padding-right: 2rem;
+    margin-left: auto;
     .mobile-nav {
         margin-left: auto;
         display: flex;
@@ -222,52 +226,7 @@
         }
     }
 }
-@media (min-width: 768px) {
-    nav {
-        .mobile-nav {
 
-        }
-        .fly-out {
-
-            .navi-upper {
-                .fly-out-nav {
-                    .mobile-nav-main {
-                        
-                        }
-                    .mobile-nav-rooms {
-                    }
-                    ul {
-                        li {
-
-                            &:hover {
-                            }
-                        }
-                        &.mobile-nav-rooms {
-                        }
-                    }
-                }
-                .apparatus {
-                    & > div {
-                    }
-                    .apparatus-text {
-                        
-                    }
-
-                }
-            }
-            .navi-footer {
-                .logos {
-                        a {
-                            img {
-
-                            }
-                        }
-                    }
-            }
-        }
-    }
-
-}
 @media (min-width: 1024px) {
     nav {
         width: var(--header-lateral-elements-width);

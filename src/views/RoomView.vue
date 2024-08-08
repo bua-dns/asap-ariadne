@@ -170,8 +170,8 @@ trackScroll();
               <div class="icon"><NavIcon dir="right"/></div>
             </RouterLink>
             <div class="placeholder" v-if="!roomsNavi.nextRoom" >
-              <RouterLink 
-                to="/" 
+              <a
+                href="/" 
                 class="nav-element"
               >
                 <div class="title">
@@ -181,7 +181,7 @@ trackScroll();
                   
                 </div>
                 <div class="icon"><NavIcon dir="right"/></div>
-              </RouterLink>
+              </a>
             </div>
 
           </div>

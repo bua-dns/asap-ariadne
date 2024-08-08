@@ -192,13 +192,8 @@ trackScroll();
         </div>
       </div>
       <div class="apparatus" v-if="true">
-        <div v-if="mode === 'nav'" class="instructions">
-            <p v-if="themeData">{{ hint }}</p>
-        </div>
-        <div v-if="mode === 'back'" class="instructions">
-            <RouterLink to="/#ariadne">Startseite</RouterLink>
-        </div>
         <div class="apparatus-links">
+            <RouterLink to="/#ariadne">Startseite</RouterLink> |
             <a 
               href="https://abguss-sammlung-berlin.de/impr/" 
               alt="Impressum und Kontakt"

@@ -143,7 +143,7 @@ const contentBlocks = computed(() => {
       margin: 4rem 0;
       color: var(--color-text-inverse);
       .instructions {
-        max-width: 24rem;
+        max-width: 44rem;
         text-align: center;
         margin: 4rem auto;
       }

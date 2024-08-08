@@ -1,6 +1,6 @@
   <script setup>
   
-  import { computed, ref } from 'vue';
+  import { computed, ref, onMounted, onUnmounted } from 'vue';
   import { useFetchSlider } from '@/composables/useFetchSlider';
   import { useGetDerivate } from '@/composables/utils';
   import CloseIcon from '@/components/icons/CloseIcon.vue';
@@ -47,8 +47,28 @@
   const slider = computed(() => {
     return data.value.data.attributes
   });
+  // Lifecycle hooks
+  onMounted(() => {
+    window.addEventListener('keydown', handleKeydown);
+  });
+
+  onUnmounted(() => {
+    window.removeEventListener('keydown', handleKeydown);
+  });
+
+  function handleKeydown(e) {
+    if (e.key === "Escape") {
+      closeSlider();
+    }
+    if (e.key === "ArrowLeft") {
+      moveSlides(-1);
+    }
+    if (e.key === "ArrowRight") {
+      moveSlides(1);
+    }
+  }
   
-  </script>
+</script>
 
 <template>
   <div class="slider" v-if="data">

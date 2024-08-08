@@ -68,6 +68,9 @@
   align-items: center;
   .exhibit {
     padding: 0 2rem;
+    &.slider {
+      padding: 0 4rem;
+    }
     &.light  {
       color: var(--color-text-inverse);
     }

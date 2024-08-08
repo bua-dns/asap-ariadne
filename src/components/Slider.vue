@@ -4,8 +4,6 @@
   import { useFetchSlider } from '@/composables/useFetchSlider';
   import { useGetDerivate } from '@/composables/utils';
   import CloseIcon from '@/components/icons/CloseIcon.vue';
-
-
   import Exhibit from '@/components/Exhibit.vue';
 
   const props = defineProps({
@@ -54,11 +52,9 @@
 
 <template>
   <div class="slider" v-if="data">
-    <!-- Controlls > 768px -->
     <CloseIcon @click="closeSlider()" class="close-icon icon" v-if="carouselMode"/>
         <div class="slider-control back" v-if="sliderIndex !== 0 && carouselMode" 
           @click="moveSlides(-1)"
-
         >
           <img class="icon" src="../assets/arrow_back.svg" alt="" >
         </div>
@@ -75,7 +71,9 @@
         <div class="slider-preview-content">
           <div v-html="props.sliderContent.text" />
         </div>
-        <div class="slider-preview-image" @click="moveSlides()">
+        <div class="slider-preview-image" 
+          @click="moveSlides()"
+        >
           <template v-if="slider.representation?.url">
             <img :src="useGetDerivate(
               slider.representation?.url,
@@ -91,7 +89,6 @@
     <div class="slider-carousel"
         v-if="carouselMode"
       >
-        
         <div class="slider-exhibit"
           v-for="(exhibit, index) in slider.exhibits"
           :key="`slider-exhibit-${index}`"
@@ -133,7 +130,6 @@
     position: fixed;
     display: flex;
     align-items: center;
-
     bottom: 0;
     left: 0;
     width: 100vw;
@@ -155,7 +151,6 @@
 
         background-color: rgba(255,255,255,.1);
       }
-
     }
     .pagination {
       flex: 1;
@@ -181,7 +176,6 @@
         &.forward {
           margin-left: auto;
           padding-right: 1rem;
-
           .icon {
             transform: rotate(180deg);
           }
@@ -227,6 +221,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         img {
           display: block;
           max-width: 100%;

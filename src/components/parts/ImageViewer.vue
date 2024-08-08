@@ -2,7 +2,6 @@
 import { defineProps, ref, Teleport, onMounted } from 'vue';
 import { useGetDerivate } from '@/composables/utils';
 
-
 const props = defineProps({
     image: String,
     caption: String,
@@ -53,8 +52,8 @@ onMounted(() => {
 
 <style scoped lang="scss">
   .representation {
-      cursor: pointer;
-      img {
+    img {
+        cursor: pointer;
         display: block;
         max-width: 100%;
         max-height: 60vh;
@@ -78,6 +77,7 @@ onMounted(() => {
           text-align: right;
           font-size: var(--font-size-small);
           opacity: .75;
+          cursor: default;
         }
       }
   }

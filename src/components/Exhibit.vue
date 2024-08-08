@@ -2,7 +2,6 @@
   
   import { computed } from 'vue';
   import { useFetchObject } from '@/composables/useFetchObject';
-  import Representation from '@/components/parts/Representation.vue';
   import ImageViewer from '@/components/parts/ImageViewer.vue';
   
   const props = defineProps({
@@ -40,13 +39,6 @@
                 :caption="object.caption"
               />
           </div>
-          <div class="medium" v-if="false">
-              <Representation
-                :data="object"
-                :textColorStyle="textColorStyle"
-                :context="context"
-              />
-          </div>
         </template>
         <template v-if="object.video.url">
           <div>
@@ -63,7 +55,6 @@
             </video>
           </div>
         </template>
-
       </div>
     </div>
   </div>
@@ -105,7 +96,6 @@
       }
   }
 }
-
 
 @media (min-width: 1200px) {
   .display {

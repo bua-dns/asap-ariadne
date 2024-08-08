@@ -132,7 +132,7 @@
     display: flex;
     align-items: center;
     font-size: 1.125rem;
-    padding-right: 1rem;
+    padding-right: 2rem;
     .mobile-nav {
         margin-left: auto;
         display: flex;
